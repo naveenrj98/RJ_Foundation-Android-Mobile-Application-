@@ -1,5 +1,6 @@
 <merge xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/azure"
     >
 
     <ScrollView
@@ -9,56 +10,58 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/white"
-            android:padding="20dp">
+            android:background="@color/azure"
+            android:padding="10dp">
 
 
             <de.hdodenhof.circleimageview.CircleImageView
-                android:layout_width="120dp"
-                android:layout_height="120dp"
                 android:id="@+id/profile_photo"
-                android:layout_marginTop="20dp"
-                app:civ_border_color="@color/black"
-                app:civ_border_width="2dp"
+                android:layout_width="203dp"
+                android:layout_height="181dp"
                 android:layout_centerHorizontal="true"
-                android:src="@drawable/sshs"/>
+                android:layout_marginTop="20dp"
+                android:src="@drawable/sshs"
+                app:civ_border_color="@color/black"
+                app:civ_border_width="2dp" />
 
             <TextView
+                android:id="@+id/changeProfilePhoto"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Change Photo"
-                android:id="@+id/changeProfilePhoto"
-                android:layout_below="@+id/profile_photo"
+                android:layout_alignParentTop="true"
                 android:layout_centerHorizontal="true"
+                android:layout_marginTop="227dp"
+                android:text="Change Photo"
                 android:textColor="@color/link_blue"
-                android:textSize="16sp"/>
+                android:textSize="16sp" />
 
 
 
             <!-- username section -->
             <RelativeLayout
+                android:id="@+id/relLayout1"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="51dp"
                 android:layout_below="@+id/changeProfilePhoto"
-                android:layout_marginTop="80dp"
-                android:background="@drawable/grey_border_bottom"
-                android:id="@+id/relLayout1">
+                android:layout_marginTop="30dp"
+                android:background="@drawable/grey_border_bottom">
 
                 <ImageView
                     android:layout_width="35dp"
                     android:layout_height="35dp"
-                    android:src="@drawable/ic_username"
-                    android:layout_centerVertical="true"/>
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_username1" />
 
                 <EditText
+                    android:id="@+id/username"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/username"
                     android:layout_centerVertical="true"
                     android:layout_marginStart="40dp"
                     android:background="@null"
+                    android:hint="username"
                     android:inputType="textNoSuggestions"
-                    android:hint="username"/>
+                    android:textSize="16dp" />
 
             </RelativeLayout>
 
@@ -75,7 +78,7 @@
                 <ImageView
                     android:layout_width="35dp"
                     android:layout_height="35dp"
-                    android:src="@drawable/ic_display_name"
+                    android:src="@drawable/ic_displayname1"
                     android:layout_centerVertical="true"/>
 
                 <EditText
@@ -85,6 +88,7 @@
                     android:layout_centerVertical="true"
                     android:layout_marginStart="40dp"
                     android:background="@null"
+                    android:textSize="16dp"
                     android:inputType="textNoSuggestions"
                     android:hint="display name"/>
 
@@ -103,7 +107,7 @@
                 <ImageView
                     android:layout_width="35dp"
                     android:layout_height="35dp"
-                    android:src="@drawable/ic_web"
+                    android:src="@drawable/ic_website1"
                     android:layout_centerVertical="true"/>
 
                 <EditText
@@ -111,6 +115,7 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/website"
                     android:layout_centerVertical="true"
+                    android:textSize="16dp"
                     android:layout_marginStart="40dp"
                     android:background="@null"
                     android:inputType="textNoSuggestions"
@@ -131,7 +136,7 @@
                 <ImageView
                     android:layout_width="35dp"
                     android:layout_height="35dp"
-                    android:src="@drawable/ic_description"
+                    android:src="@drawable/ic_description1"
                     android:layout_centerVertical="true"/>
 
                 <EditText
@@ -139,6 +144,7 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/description"
                     android:layout_centerVertical="true"
+                    android:textSize="16dp"
                     android:layout_marginStart="40dp"
                     android:background="@null"
                     android:inputType="textNoSuggestions"
@@ -148,16 +154,16 @@
 
 
             <TextView
-                android:layout_width="wrap_content"
+                android:id="@+id/textPrivateInfo"
+                android:layout_width="342dp"
                 android:layout_height="wrap_content"
-                android:textSize="25sp"
-                android:text="PRIVATE INFORMATION"
                 android:layout_below="@id/relLayout4"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/azure"
+                android:text="Privacy Settings"
                 android:textColor="@color/black"
-                android:background="@drawable/grey_border_bottom"
-                android:id="@+id/textPrivateInfo"/>
+                android:textSize="20sp" />
 
 
             <!-- email section -->
@@ -172,7 +178,7 @@
                 <ImageView
                     android:layout_width="35dp"
                     android:layout_height="35dp"
-                    android:src="@drawable/ic_email"
+                    android:src="@drawable/ic_email1"
                     android:layout_centerVertical="true"/>
 
                 <EditText
@@ -180,6 +186,7 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/email"
                     android:layout_centerVertical="true"
+                    android:textSize="16dp"
                     android:layout_marginStart="40dp"
                     android:background="@null"
                     android:inputType="textNoSuggestions"
@@ -199,13 +206,14 @@
                 <ImageView
                     android:layout_width="35dp"
                     android:layout_height="35dp"
-                    android:src="@drawable/ic_phone"
+                    android:src="@drawable/ic_phone1"
                     android:layout_centerVertical="true"/>
 
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/phoneNumber"
+                    android:textSize="16dp"
                     android:layout_centerVertical="true"
                     android:layout_marginStart="40dp"
                     android:background="@null"

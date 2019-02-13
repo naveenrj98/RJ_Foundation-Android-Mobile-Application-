@@ -21,6 +21,7 @@ import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
 import java.util.ArrayList;
 
 import u.in.ac.bmsce.rjfoundation.R;
+import u.in.ac.bmsce.rjfoundation.Users.ContactUsFragment;
 import u.in.ac.bmsce.rjfoundation.Utils.BottomNavigationViewHelper;
 import u.in.ac.bmsce.rjfoundation.Utils.SectionsStatePagerAdapter;
 
@@ -75,7 +76,11 @@ public class AccountSettingsActivity extends AppCompatActivity {
     private void setupFragments(){
         pagerAdapter = new SectionsStatePagerAdapter(getSupportFragmentManager());
         pagerAdapter.addFragment(new EditProfileFragment(), getString(R.string.edit_profile_fragment)); //fragment 0
-        pagerAdapter.addFragment(new SignOutFragment(), getString(R.string.sign_out_fragment)); //fragment 1
+
+        pagerAdapter.addFragment(new DeveloperFragment(), "Developers"); //fragment 1
+        pagerAdapter.addFragment(new ContactUsFragment(), "Contact Us"); //fragment 2
+        pagerAdapter.addFragment(new SignOutFragment(), getString(R.string.sign_out_fragment)); //fragment 3
+
     }
 
     private void setViewPager(int fragmentNumber){
@@ -91,7 +96,12 @@ public class AccountSettingsActivity extends AppCompatActivity {
 
         ArrayList<String> options = new ArrayList<>();
         options.add(getString(R.string.edit_profile_fragment)); //fragment 0
-        options.add(getString(R.string.sign_out_fragment)); //fragement 1
+
+        options.add("Developers"); //fragement 1
+        options.add("Contact Us"); //fragement 2
+        options.add(getString(R.string.sign_out_fragment)); //fragement 3
+
+
 
         ArrayAdapter adapter = new ArrayAdapter(mContext, android.R.layout.simple_list_item_1, options);
         listView.setAdapter(adapter);

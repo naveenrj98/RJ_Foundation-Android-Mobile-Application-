@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="u.in.ac.bmsce.rjfoundation">
+
     <!-- Include following permission if you load images from Internet -->
     <uses-permission android:name="android.permission.INTERNET" />
     <!-- Include following permission if you want to cache images on SD card -->
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -42,31 +44,25 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".Users.LoginActivity"
-
-            android:label="RJ_LOGIN">
-
-        </activity>
-
-        <activity android:name=".Users.RegisterActivity"
-            android:label="RJ_REGI">
-
-        </activity>
+        <activity
+            android:name=".Home2Activity"
+            android:label="RJ" />
+        <activity
+            android:name=".Users.LoginActivity"
+            android:label="RJ_LOGIN" />
+        <activity
+            android:name=".Users.RegisterActivity"
+            android:label="RJ_REGI" />
         <activity android:name=".Donate.DonateActivity" />
         <activity android:name=".Profile.ProfileActivity" />
         <activity android:name=".Gallery.GalleryActivity" />
         <activity android:name=".HomePage.developerActivitiy" />
         <activity android:name=".HomePage.AboutUsActivity" />
-
-
-
-
         <activity android:name=".Donate.DonateDollerActivity" />
         <activity android:name=".Donate.DonateFoodActivity" />
         <activity android:name=".Donate.DonateKnowledgeActivity" />
         <activity android:name=".News.NewsActivity" />
-        <activity android:name=".Profile.AccountSettingsActivity"></activity>
+        <activity android:name=".Profile.AccountSettingsActivity" />
     </application>
 
 </manifest>

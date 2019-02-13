@@ -20,6 +20,7 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
+import u.in.ac.bmsce.rjfoundation.Home2Activity;
 import u.in.ac.bmsce.rjfoundation.HomeActivity;
 import u.in.ac.bmsce.rjfoundation.R;
 
@@ -132,12 +133,23 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
-        TextView linkSignUp = (TextView) findViewById(R.id.link_signup);
-        linkSignUp.setOnClickListener(new View.OnClickListener() {
+        Button btnsignup = (Button) findViewById(R.id.btn_signup);
+        btnsignup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Log.d(TAG, "onClick: navigating to register screen");
                 Intent intent = new Intent(LoginActivity.this, RegisterActivity.class);
+                startActivity(intent);
+            }
+        });
+
+
+        TextView linkguest = (TextView) findViewById(R.id.link_guest);
+        linkguest.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.d(TAG, "onClick: navigating to register screen");
+                Intent intent = new Intent(LoginActivity.this, Home2Activity.class);
                 startActivity(intent);
             }
         });

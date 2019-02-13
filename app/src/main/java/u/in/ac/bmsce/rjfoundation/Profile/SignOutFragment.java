@@ -28,14 +28,14 @@ public class SignOutFragment extends Fragment {
     private FirebaseAuth mAuth;
     private FirebaseAuth.AuthStateListener mAuthListener;
     private ProgressBar mProgressBar;
-    private TextView tvSignout, tvSigningOut;
+    private TextView tvSigningOut;
 
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_signout, container, false);
-        tvSignout =  view.findViewById(R.id.tvConfirmSignout);
+
         mProgressBar =  view.findViewById(R.id.progressBar);
         tvSigningOut =  view.findViewById(R.id.tvSigningOut);
         Button btnConfirmSignout =  view.findViewById(R.id.btnConfirmSignout);

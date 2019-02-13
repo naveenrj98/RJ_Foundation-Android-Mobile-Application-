@@ -5,10 +5,10 @@
         android:state_pressed="true">
         <shape>
             <solid
-                android:color="@color/grey"/>
+                android:color="@color/t_login"/>
             <stroke
                 android:color="@color/black"
-                android:width="1dp"/>
+                android:width="2dp"/>
             <corners
                 android:radius="50dp"/>
         </shape>
@@ -16,10 +16,10 @@
     <item>
         <shape>
             <solid
-                android:color="@color/white"/>
+              />
             <stroke
-                android:color="@color/grey"
-                android:width="1dp"/>
+                android:color="@color/black"
+                android:width="2dp"/>
             <corners
                 android:radius="50dp"/>
         </shape>
