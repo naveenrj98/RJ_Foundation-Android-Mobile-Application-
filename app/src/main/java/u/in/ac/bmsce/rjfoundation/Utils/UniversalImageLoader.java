@@ -19,7 +19,7 @@ import u.in.ac.bmsce.rjfoundation.R;
 
 public class UniversalImageLoader {
 
-    private static final int defaultImage = R.drawable.ic_android;
+    private static final int defaultImage = R.drawable.sshs;
     private Context mContext;
 
     public UniversalImageLoader(Context context) {

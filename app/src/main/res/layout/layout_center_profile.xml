@@ -38,7 +38,8 @@
                         android:layout_height="80dp"
                         android:layout_centerVertical="true"
                         app:civ_border_color="@color/black"
-                        app:civ_border_width="2dp"/>
+                        app:civ_border_width="2dp"
+                        android:src="@drawable/sshs"/>
 
 
                 </RelativeLayout>
@@ -50,7 +51,7 @@
                     android:layout_marginStart="30dp"
                     android:layout_weight="75">
 
-                    <include layout="@layout/snippet_top_profile"/>
+                    <include layout="@layout/snippet_top_profile" />
 
                 </RelativeLayout>
 
@@ -69,7 +70,7 @@
                     android:id="@+id/display_name"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Mitch"
+                    android:text="NU"
                     android:textColor="@color/black"
                     android:textSize="16sp"
                     android:textStyle="bold"/>
@@ -79,7 +80,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
-                    android:text="I live in Vancouver, BC"
+                    android:text="Educate The Girl and Empower the Nation"
                     android:textColor="@color/black"
                     android:textSize="16sp"/>
 
@@ -88,7 +89,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
-                    android:text="https://codingwithmitch.com"
+                    android:text="www.RJ-FOUNDATION.org"
                     android:textColor="@color/link_blue"
                     android:textSize="16sp"
                     />
