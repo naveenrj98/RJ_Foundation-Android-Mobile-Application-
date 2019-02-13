@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Gallery" />
+        <item
+            android:id="@+id/nav_donation"
+            android:icon="@drawable/ic_donate"
+            android:title="Donation" />
+        <item
+            android:id="@+id/nav_ourwork"
+            android:icon="@drawable/ic_ourwork"
+            android:title="Our Work" />
+        <item
+            android:id="@+id/nav_partners"
+            android:icon="@drawable/ic_partner"
+            android:title="Partners" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_contactus"
+                android:title="Contact Us" />
+            <item
+                android:id="@+id/nav_aboutus"
+                android:icon="@drawable/ic_aboutus"
+                android:title="About Us" />
+            <item
+                android:id="@+id/nav_developer"
+                android:icon="@drawable/ic_developer"
+                android:title="Developers" />
+            <item
+                android:id="@+id/nav_guid"
+                android:icon="@drawable/ic_help"
+                android:title="Help" />
+        </menu>
+    </item>
+
+</menu>

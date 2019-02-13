@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="u.in.ac.bmsce.rjfoundation">
+    <!-- Include following permission if you load images from Internet -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- Include following permission if you want to cache images on SD card -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!--
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Main2Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        -->
+        <activity
+            android:name=".HomeActivity"
+            android:label="RJ">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Users.LoginActivity"
+
+            android:label="RJ_LOGIN">
+
+        </activity>
+
+        <activity android:name=".Users.RegisterActivity"
+            android:label="RJ_REGI">
+
+        </activity>
+        <activity android:name=".Donate.DonateActivity" />
+        <activity android:name=".Profile.ProfileActivity" />
+        <activity android:name=".Gallery.GalleryActivity" />
+        <activity android:name=".HomePage.developerActivitiy" />
+        <activity android:name=".HomePage.AboutUsActivity" />
+
+
+
+
+        <activity android:name=".Donate.DonateDollerActivity" />
+        <activity android:name=".Donate.DonateFoodActivity" />
+        <activity android:name=".Donate.DonateKnowledgeActivity" />
+        <activity android:name=".News.NewsActivity" />
+        <activity android:name=".Profile.AccountSettingsActivity"></activity>
+    </application>
+
+</manifest>

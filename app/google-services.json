@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1049400609426",
+    "firebase_url": "https://rj-foundation-cbb0e.firebaseio.com",
+    "project_id": "rj-foundation-cbb0e",
+    "storage_bucket": "rj-foundation-cbb0e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1049400609426:android:1b6c67c0b9e40917",
+        "android_client_info": {
+          "package_name": "u.in.ac.bmsce.rjfoundation"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1049400609426-fk4vjbnopr2om89kfk2prfv9kv6731hj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "u.in.ac.bmsce.rjfoundation",
+            "certificate_hash": "1b1bffa2bce62a17ab4e84f6241674923731f9cc"
+          }
+        },
+        {
+          "client_id": "1049400609426-a3nfi7vt0ilkiohdm913vl5iq67pp92b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMWLymNseW4KLtAFyGIBZ-po4UwKO9fgA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1049400609426-a3nfi7vt0ilkiohdm913vl5iq67pp92b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
