@@ -45,7 +45,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
-                    android:text="Home"
+                    android:text="Sponsors"
                     android:textSize="20sp"
                     android:textColor="@color/white"
                     android:layout_marginStart="5dp"
@@ -62,7 +62,7 @@
 
     </android.support.design.widget.AppBarLayout>
 
-    <include layout="@layout/content_main" />
+    <include layout="@layout/content_gallery" />
 
 
 

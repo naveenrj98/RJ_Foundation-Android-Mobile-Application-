@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".MainActivity"
-    tools:showIn="@layout/layout_top_tabs">
+    tools:showIn="@layout/layout_top_tabs"
+    android:background="@color/azure">
 
 
     <!-- Middle section (body) -->
@@ -15,10 +16,14 @@
         android:layout_height="match_parent"
         android:id="@+id/relLayout2"
 
-        android:layout_marginTop="45dp">
+        android:layout_marginTop="50dp">
 
-        <include layout="@layout/snippet_center_home"/>
-
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:text="Donate Activity"
+           android:textSize="35dp"
+           android:textAlignment="center"/>
 
     </RelativeLayout>
 

@@ -14,74 +14,155 @@
             android:background="@drawable/home_b3">
 
 
-            <TextView
-                android:id="@+id/tv_donate"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+            <RelativeLayout
+                android:id="@+id/rl_donate"
+                android:layout_width="match_parent"
+                android:layout_height="189dp"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
-                android:layout_marginStart="140dp"
-                android:layout_marginTop="101dp"
-                android:text="TextView" />
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="5dp">
 
-            <TextView
-                android:id="@+id/tv_volunteer"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                <TextView
+                    android:id="@+id/tv_donate"
+                    android:layout_width="365dp"
+                    android:layout_height="182dp"
+                    android:layout_centerInParent="true"
+
+                    android:background="@drawable/custom_ripple_border"
+                    android:text="@string/dbname_followers" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_volunteer"
+                android:layout_width="186dp"
+                android:layout_height="183dp"
+
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
-                android:layout_marginStart="71dp"
-                android:layout_marginTop="280dp"
-                android:text="TextView" />
+                android:layout_marginTop="205dp">
 
-            <TextView
-                android:id="@+id/tv_today"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                <TextView
+                    android:id="@+id/tv_volunteer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+
+                    android:background="@drawable/custom_ripple_border" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_todayevent"
+                android:layout_width="182dp"
+                android:layout_height="194dp"
+                android:layout_alignEnd="@+id/rl_aboutus"
+
+
+                android:layout_alignTop="@+id/rl_volunteer"
+                android:layout_marginTop="-5dp">
+
+                <TextView
+                    android:id="@+id/tv_todayevent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/custom_ripple_border"
+
+                    />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_sponsor"
+                android:layout_width="match_parent"
+                android:layout_height="192dp"
+
+
                 android:layout_alignParentEnd="true"
-                android:layout_alignTop="@+id/tv_volunteer"
-                android:layout_marginEnd="92dp"
-                android:text="TextView" />
-
-            <TextView
-                android:id="@+id/tv_sponsor"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
-                android:layout_marginTop="470dp"
-                android:layout_toEndOf="@+id/tv_volunteer"
-                android:text="TextView" />
+                android:layout_marginTop="396dp">
 
-            <TextView
-                android:id="@+id/tv_profile"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:layout_alignParentStart="true"
-                android:layout_marginBottom="275dp"
-                android:layout_marginStart="121dp"
-                android:text="TextView" />
+                <TextView
+                    android:id="@+id/tv_sponsor"
+                    android:layout_width="match_parent"
+                    android:layout_height="185dp"
+                    android:background="@drawable/custom_ripple_border"
 
-            <TextView
-                android:id="@+id/textView10"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:layout_alignParentEnd="true"
-                android:layout_marginBottom="341dp"
-                android:layout_marginEnd="62dp"
-                android:text="TextView" />
 
-            <TextView
-                android:id="@+id/tv_aboutus"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:layout_centerHorizontal="true"
-                android:layout_marginBottom="160dp"
-                android:text="TextView" />
+                    />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_profile"
+                android:layout_width="192dp"
+                android:layout_height="189dp"
+                android:layout_below="@+id/rl_sponsor"
+                android:layout_marginTop="-2dp"
+
+
+                >
+
+                <TextView
+                    android:id="@+id/tv_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="189dp"
+                    android:background="@drawable/custom_ripple_border" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_developers"
+                android:layout_width="189dp"
+                android:layout_height="188dp"
+
+                android:layout_alignEnd="@+id/rl_donate"
+                android:layout_alignTop="@+id/rl_profile">
+
+                <TextView
+                    android:id="@+id/tv_developers"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/custom_ripple_border"
+
+                    android:text=" " />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_aboutus"
+                android:layout_width="match_parent"
+                android:layout_height="192dp"
+                android:layout_below="@+id/rl_profile"
+                android:layout_marginTop="5dp"
+
+                >
+
+                <TextView
+                    android:id="@+id/tv_aboutus"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/custom_ripple_border"
+
+                    />
+
+
+            </RelativeLayout>
+
+
+
+
+
         </RelativeLayout>
 
 
     </ScrollView>
+
 </merge>

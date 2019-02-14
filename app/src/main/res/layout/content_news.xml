@@ -15,10 +15,14 @@
         android:layout_height="match_parent"
         android:id="@+id/relLayout2"
 
-        android:layout_marginTop="45dp">
+        android:layout_marginTop="50dp">
 
-        <include layout="@layout/snippet_center_home"/>
-
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:text="NEWS ACTIVITY"
+           android:textSize="35dp"
+           android:textAlignment="center"/>
 
     </RelativeLayout>
 
