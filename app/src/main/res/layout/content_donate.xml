@@ -10,22 +10,50 @@
     android:background="@color/azure">
 
 
-    <!-- Middle section (body) -->
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/relLayout2"
 
         android:layout_marginTop="50dp">
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="174dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/btn_pay"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0">
 
-       <TextView
-           android:layout_width="match_parent"
-           android:layout_height="match_parent"
-           android:text="Donate Activity"
-           android:textSize="35dp"
-           android:textAlignment="center"/>
+            <EditText
+                android:id="@+id/input_pay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter amount"
+                android:text="11"
+                android:inputType="textEmailAddress" />
 
-    </RelativeLayout>
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/btn_pay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="pay"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
 
 
 

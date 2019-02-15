@@ -1,7 +1,9 @@
 package u.in.ac.bmsce.rjfoundation.Donate;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.support.annotation.Nullable;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
@@ -16,9 +18,17 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
 
 import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import instamojo.library.InstamojoPay;
+import instamojo.library.InstapayListener;
 import u.in.ac.bmsce.rjfoundation.Gallery.GalleryActivity;
 import u.in.ac.bmsce.rjfoundation.HomeActivity;
 import u.in.ac.bmsce.rjfoundation.News.NewsActivity;
@@ -34,6 +44,8 @@ public class DonateActivity extends AppCompatActivity implements NavigationView.
     private static final int ACTIVITY_NUM = 2;
 
     private Context mContext = DonateActivity.this;
+    private EditText input_pay;
+    private String pay;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -42,6 +54,27 @@ public class DonateActivity extends AppCompatActivity implements NavigationView.
         Log.d(TAG, "onCreate: started.");
 
         setupBottomNavigationView();
+
+
+        //----------------------------------------Payment link ----------------------------------------------
+
+        input_pay = findViewById(R.id.input_pay);
+       pay = input_pay.getText().toString();
+        Button btn_pay = findViewById(R.id.btn_pay);
+
+        btn_pay.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                callInstamojoPay("naveekumarr97@gmail.com", "8073141525", pay, "Donation to RJ", "buyername");
+
+            }
+        });
+
+
+
+        //-----------------------------------------Instamojo payment link--------------------------------------
+
+
 
         //--------------------------------------Navigation related code------------------------------------------------------------
 
@@ -68,6 +101,48 @@ public class DonateActivity extends AppCompatActivity implements NavigationView.
 
     }
 
+
+    //--------------------------Instmojo payment link-----------------------------------------
+
+    private void callInstamojoPay(String email, String phone, String amount, String purpose, String buyername) {
+        final Activity activity = this;
+        InstamojoPay instamojoPay = new InstamojoPay();
+        IntentFilter filter = new IntentFilter("ai.devsupport.instamojo");
+        registerReceiver(instamojoPay, filter);
+        JSONObject pay = new JSONObject();
+        try {
+            pay.put("email", email);
+            pay.put("phone", phone);
+            pay.put("purpose", purpose);
+            pay.put("amount", amount);
+            pay.put("name", buyername);
+            pay.put("send_sms", true);
+            pay.put("send_email", true);
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        initListener();
+        instamojoPay.start(activity, pay, listener);
+    }
+
+    InstapayListener listener;
+
+
+    private void initListener() {
+        listener = new InstapayListener() {
+            @Override
+            public void onSuccess(String response) {
+                Toast.makeText(getApplicationContext(), response, Toast.LENGTH_LONG)
+                        .show();
+            }
+
+            @Override
+            public void onFailure(int code, String reason) {
+                Toast.makeText(getApplicationContext(), "Failed: " + reason, Toast.LENGTH_LONG)
+                        .show();
+            }
+        };
+    }
 
     /*
     ------------------------Navigation Bar Action methods----------------------------------------

@@ -18,10 +18,19 @@ android {
     }
 }
 
+repositories {
+    mavenCentral()
+    maven {
+        url "https://s3-ap-southeast-1.amazonaws.com/godel-release/godel/"
+    }
+}
+
 dependencies {
 
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation 'com.android.support:appcompat-v7:27.1.1'
+    
+    implementation 'ai.devsupport.instamojo:instamojolib:0.1.6'
     implementation 'com.android.support:cardview-v7:27.1.1'
     implementation 'com.android.support:design:27.1.1'
     implementation 'com.android.support.constraint:constraint-layout:1.1.3'
