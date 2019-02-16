@@ -23,6 +23,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.github.clans.fab.FloatingActionMenu;
@@ -60,6 +61,7 @@ public class DonateActivity extends AppCompatActivity implements NavigationView.
 
     //payment widgets
     private EditText input_pay;
+
 
 
     @Override

@@ -1,0 +1,36 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    >
+
+
+        <RelativeLayout
+            android:id="@+id/tv_developer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/donate_b4">
+
+                <RelativeLayout
+                    android:id="@+id/rl_donate"
+                    android:layout_width="363dp"
+                    android:layout_height="155dp"
+                    android:layout_marginTop="24dp">
+
+                        <TextView
+                            android:id="@+id/tv_edonate"
+                            android:layout_width="213dp"
+                            android:layout_height="135dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginEnd="65dp"
+                            android:background="@drawable/custom_ripple_border_donate" />
+
+                </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+</merge>

@@ -34,7 +34,7 @@ public class DonorActivity extends AppCompatActivity {
         btn_pay.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                callInstamojoPay("naveekumarr97@gmail.com", "8073141525", pay, "official", "buyername");
+                callInstamojoPay("naveekumarr97@gmail.com", "8073141525", pay, "RJ FOUNDATION", "Lucky");
 
             }
         });

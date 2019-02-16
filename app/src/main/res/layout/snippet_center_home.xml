@@ -30,7 +30,7 @@
                     android:layout_centerInParent="true"
 
                     android:background="@drawable/custom_ripple_border"
-                    android:text="@string/dbname_followers" />
+                    />
 
 
             </RelativeLayout>
