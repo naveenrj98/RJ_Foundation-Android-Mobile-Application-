@@ -29,7 +29,7 @@ dependencies {
 
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation 'com.android.support:appcompat-v7:27.1.1'
-    
+
     implementation 'ai.devsupport.instamojo:instamojolib:0.1.6'
     implementation 'com.android.support:cardview-v7:27.1.1'
     implementation 'com.android.support:design:27.1.1'
@@ -46,7 +46,9 @@ dependencies {
 
     /*---------Image loader---------*/
     implementation 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
-/*------------FIREBASE-------------*/
+    implementation 'com.github.clans:fab:1.6.2'
+
+    /*------------FIREBASE-------------*/
     implementation 'com.google.firebase:firebase-auth:16.1.0'
     implementation 'com.google.android.gms:play-services-auth:16.0.1'
     implementation 'com.google.firebase:firebase-core:16.0.5'

@@ -7,6 +7,15 @@
     <!-- Include following permission if you want to cache images on SD card -->
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
+    <uses-permission-sdk-23 android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission-sdk-23 android:name="android.permission.READ_SMS" />
+    <uses-permission-sdk-23 android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -55,7 +64,8 @@
         <activity android:name=".News.NewsActivity" />
         <activity android:name=".Profile.AccountSettingsActivity" />
         <activity android:name=".Profile.DeveloperActivty" />
-        <activity android:name=".DonorActivity"
+        <activity
+            android:name=".DonorActivity"
             android:label="Donor">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -63,23 +73,27 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-    <meta-data android:name="instamojo.orderauth.url"
-                   android:value="https://perfective-characte.000webhostapp.com/acces/access_token.php"
-            />
+
+        <meta-data
+            android:name="instamojo.orderauth.url"
+            android:value="https://perfective-characte.000webhostapp.com/acces/access_token.php" />
+
+        <activity
+            android:name=".FloatingActivity"
+            android:label="float">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".HelpActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
-    <uses-permission-sdk-23 android:name="android.permission.RECEIVE_SMS"/>
- 
-    <uses-permission-sdk-23 android:name="android.permission.READ_SMS"/>
- 
-    <uses-permission-sdk-23 android:name="android.permission.READ_PHONE_STATE"/>
- 
-    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
- 
-    <uses-permission android:name="android.permission.READ_SMS"/>
- 
-    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
- 
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
- 
 
 </manifest>

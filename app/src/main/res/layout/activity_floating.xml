@@ -1,37 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:fab="http://schemas.android.com/apk/res-auto"
-    android:background="@color/azure">
+    tools:context=".FloatingActivity">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/relLayout1">
 
-        <include layout="@layout/snippet_top_profilebar"/>
-
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/relLayout1"
-        android:id="@+id/relLayout2">
-
-        <include layout="@layout/layout_center_profile"/>
-
-    </RelativeLayout>
-
-    <ProgressBar
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:id="@+id/profileProgressBar"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="100dp"/>
-
-    <include layout="@layout/layout_bottom_navigation_view"/>
 
     <com.github.clans.fab.FloatingActionMenu
         android:id="@+id/social_floating_menu"
@@ -39,14 +19,14 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
-        android:layout_marginBottom="30dp"
+        android:layout_marginBottom="11dp"
         android:layout_marginLeft="11dp"
         android:layout_marginRight="11dp"
         fab:menu_animationDelayPerItem="55"
         fab:menu_backgroundColor="@android:color/transparent"
         fab:menu_buttonSpacing="0dp"
-        fab:menu_colorNormal="@color/background"
-        fab:menu_colorPressed="@color/background"
+        fab:menu_colorNormal="@color/juspay_blue_dark"
+        fab:menu_colorPressed="@color/juspay_blue_dark"
         fab:menu_colorRipple="#99d4d4d4"
         fab:menu_fab_label="RJ Profile guru"
         fab:menu_fab_size="normal"
@@ -78,50 +58,53 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@mipmap/fb1"
-            fab:fab_size="mini"
+            fab:fab_size="normal"
 
-            fab:fab_colorNormal="@color/azure"/>
+            fab:fab_colorNormal="@android:color/transparent"/>
 
         <com.github.clans.fab.FloatingActionButton
             android:id="@+id/floating_linkedin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@mipmap/linkein"
-            fab:fab_colorNormal="@color/azure"
-            fab:fab_size="mini" />
+            fab:fab_colorNormal="@android:color/transparent"
+            fab:fab_size="normal" />
 
         <com.github.clans.fab.FloatingActionButton
             android:id="@+id/floating_instagram"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@mipmap/insta1"
-            fab:fab_colorNormal="@color/azure"
-            fab:fab_size="mini" />
+            fab:fab_colorNormal="@android:color/transparent"
+            fab:fab_size="normal" />
 
         <com.github.clans.fab.FloatingActionButton
             android:id="@+id/floating_github"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@mipmap/gh1"
-            fab:fab_colorNormal="@color/azure"
-            fab:fab_size="mini" />
+            fab:fab_colorNormal="@color/background"
+            fab:fab_size="normal" />
 
         <com.github.clans.fab.FloatingActionButton
             android:id="@+id/floating_web"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@mipmap/globe2"
-            fab:fab_colorNormal="@color/azure"
-            fab:fab_size="mini" />
+            fab:fab_colorNormal="@color/background"
+            fab:fab_size="normal" />
 
         <com.github.clans.fab.FloatingActionButton
             android:id="@+id/floating_help"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@mipmap/help1"
-            fab:fab_colorNormal="@color/azure"
-            fab:fab_size="mini" />
+            fab:fab_colorNormal="@color/background"
+            fab:fab_size="normal" />
 
     </com.github.clans.fab.FloatingActionMenu>
 
+
+
 </RelativeLayout>
+

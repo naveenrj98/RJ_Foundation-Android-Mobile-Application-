@@ -1,37 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:fab="http://schemas.android.com/apk/res-auto"
-    android:background="@color/azure">
+    tools:context=".MainActivity">
 
-    <RelativeLayout
+    <!--<android.support.design.widget.AppBarLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:theme="@style/AppTheme.AppBarOverlay">-->
+
+        <!--<android.support.v7.widget.Toolbar-->
+            <!--android:id="@+id/toolbar"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@drawable/white_grey_border_bottom"-->
+            <!--app:popupTheme="@style/AppTheme.PopupOverlay" />-->
+
+    <!--</android.support.design.widget.AppBarLayout>-->
+
+    <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/relLayout1">
+        android:layout_height="50dp"
+        android:background="@drawable/white_grey_border_bottom"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        >
 
-        <include layout="@layout/snippet_top_profilebar"/>
+        <android.support.v7.widget.Toolbar
 
-    </RelativeLayout>
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolbar"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/relLayout1"
-        android:id="@+id/relLayout2">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-        <include layout="@layout/layout_center_profile"/>
 
-    </RelativeLayout>
 
-    <ProgressBar
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:id="@+id/profileProgressBar"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="100dp"/>
+                <TextView
 
-    <include layout="@layout/layout_bottom_navigation_view"/>
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="Donate"
+                    android:textSize="20sp"
+                    android:textColor="@color/white"
+                    android:layout_marginStart="5dp"
+                    android:id="@+id/profileName"/>
+
+
+
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.Toolbar>
+
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_gallery" />
+
+
+
+
+
+
+    <!-- bottom navigation -->
+    <include layout="@layout/layout_bottom_navigation_view" />
 
     <com.github.clans.fab.FloatingActionMenu
         android:id="@+id/social_floating_menu"
@@ -123,5 +163,16 @@
             fab:fab_size="mini" />
 
     </com.github.clans.fab.FloatingActionMenu>
+    <!--<android.support.design.widget.FloatingActionButton-->
+        <!--android:id="@+id/fab"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--android:layout_gravity="bottom|end"-->
+        <!--android:layout_marginBottom="55dp"-->
+        <!--android:layout_marginEnd="24dp"-->
+        <!--android:backgroundTint="@color/background"-->
+        <!--app:srcCompat="@android:drawable/ic_dialog_email" />-->
 
 </RelativeLayout>

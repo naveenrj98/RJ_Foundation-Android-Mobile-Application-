@@ -6,5 +6,10 @@
         android:orderInCategory="100"
         android:title="@string/action_settings"
         app:showAsAction="collapseActionView" />
+    <item
+        android:id="@+id/action_shreapp"
+        android:orderInCategory="100"
+        android:title="Share App"
+        app:showAsAction="collapseActionView" />
 
 </menu>
