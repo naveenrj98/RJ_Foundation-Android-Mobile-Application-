@@ -25,6 +25,7 @@ import com.google.firebase.auth.FirebaseUser;
 import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
 import com.nostra13.universalimageloader.core.ImageLoader;
 
+import u.in.ac.bmsce.rjfoundation.AboutUs.AboutUsActivity;
 import u.in.ac.bmsce.rjfoundation.Donate.DonateActivity;
 import u.in.ac.bmsce.rjfoundation.Gallery.GalleryActivity;
 import u.in.ac.bmsce.rjfoundation.Profile.DeveloperActivty;
@@ -32,6 +33,7 @@ import u.in.ac.bmsce.rjfoundation.News.NewsActivity;
 import u.in.ac.bmsce.rjfoundation.Profile.AccountSettingsActivity;
 import u.in.ac.bmsce.rjfoundation.Profile.ProfileActivity;
 import u.in.ac.bmsce.rjfoundation.Profile.SignOutFragment;
+import u.in.ac.bmsce.rjfoundation.Sponsors.SponsorActivity;
 import u.in.ac.bmsce.rjfoundation.Users.LoginActivity;
 import u.in.ac.bmsce.rjfoundation.Utils.BottomNavigationViewHelper;
 import u.in.ac.bmsce.rjfoundation.Utils.UniversalImageLoader;
@@ -176,7 +178,7 @@ public class HomeActivity extends AppCompatActivity  implements NavigationView.O
             public void onClick(View v) {
 
                 Log.d(TAG, "onClick: navigating to " + mContext.getString(R.string.edit_profile_fragment));
-                Intent intent = new Intent(HomeActivity.this, GalleryActivity.class);
+                Intent intent = new Intent(HomeActivity.this, SponsorActivity.class);
                 startActivity(intent);
             }
         });
@@ -217,7 +219,7 @@ public class HomeActivity extends AppCompatActivity  implements NavigationView.O
             @Override
             public void onClick(View v) {
                 Log.d(TAG, "onClick: navigating to " + mContext.getString(R.string.edit_profile_fragment));
-                Intent intent = new Intent(HomeActivity.this, AccountSettingsActivity.class);
+                Intent intent = new Intent(HomeActivity.this, AboutUsActivity.class);
                 startActivity(intent);
             }
         });
@@ -390,12 +392,12 @@ public static Intent getOpenFacebookIntent(Context context) {
 
         } else if (id == R.id.nav_aboutus) {
             Log.d(TAG, "onClick: navigating to " + mContext.getString(R.string.edit_profile_fragment));
-            Intent intent = new Intent(this, DeveloperActivty.class);
+            Intent intent = new Intent(this, AboutUsActivity.class);
             startActivity(intent);
 
         }else if (id == R.id.nav_partners) {
             Log.d(TAG, "onClick: navigating to " + mContext.getString(R.string.edit_profile_fragment));
-            Intent intent = new Intent(this, GalleryActivity.class);
+            Intent intent = new Intent(this, SponsorActivity.class);
             startActivity(intent);
 
         }else if (id == R.id.nav_share) {

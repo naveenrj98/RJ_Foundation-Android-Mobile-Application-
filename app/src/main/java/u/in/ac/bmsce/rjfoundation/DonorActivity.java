@@ -20,21 +20,26 @@ public class DonorActivity extends AppCompatActivity {
 
 
     private EditText input_pay;
+    private String pay1;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_donor);
         // Call the function callInstamojo to start payment here
 
-        input_pay = findViewById(R.id.input_pay);
-       final String pay = input_pay.getText().toString();
+
+
 
         Button btn_pay = findViewById(R.id.btn_pay);
 
         btn_pay.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                callInstamojoPay("naveekumarr97@gmail.com", "8073141525", pay, "RJ FOUNDATION", "Lucky");
+                input_pay = (EditText) findViewById(R.id.input_pay);
+                pay1 = input_pay.getText().toString();
+
+                callInstamojoPay("naveekumarr97@gmail.com", "8073141525",pay1, "RJ FOUNDATION", "Lucky");
 
             }
         });

@@ -57,7 +57,20 @@
         <activity android:name=".Donate.DonateActivity" />
         <activity android:name=".Profile.ProfileActivity" />
         <activity android:name=".Gallery.GalleryActivity" />
-        <activity android:name=".HomePage.AboutUsActivity" />
+        <activity android:name=".AboutUs.AboutUsActivity"
+            android:label="ABOUTUS">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+
+
+
+
+
+        </activity>
         <activity android:name=".Donate.DonateDollerActivity" />
         <activity android:name=".Donate.DonateFoodActivity" />
         <activity android:name=".Donate.DonateKnowledgeActivity" />
@@ -88,6 +101,14 @@
             </intent-filter>
         </activity>
         <activity android:name=".HelpActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Sponsors.SponsorActivity"
+            android:label="sponsor">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

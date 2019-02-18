@@ -33,8 +33,9 @@
                                   </option>
                                   <option name="values">
                                     <map>
-                                      <entry key="outputName" value="ic_phone1" />
-                                      <entry key="theme" value="CUSTOM" />
+                                      <entry key="assetType" value="IMAGE" />
+                                      <entry key="imageAsset" value="C:\Users\jyothiramesh\Desktop\figma\Rectangle.png" />
+                                      <entry key="outputName" value="ic_phone12" />
                                       <entry key="themeColor" value="4db6ac" />
                                     </map>
                                   </option>

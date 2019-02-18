@@ -14,7 +14,7 @@
         android:id="@+id/relLayout1"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/about_us_background_image"
+        android:background="@drawable/sponsors_back_image"
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="0dp">
 
@@ -28,7 +28,7 @@
             android:layout_marginEnd="18dp"
             android:layout_marginTop="180dp">
 
-            <include layout="@layout/layout_center_aboutsus" />
+            <include layout="@layout/layout_center_sponsors" />
 
         </RelativeLayout>
 

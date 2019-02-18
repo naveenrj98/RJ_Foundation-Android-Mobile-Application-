@@ -8,28 +8,26 @@
     >
 
 
-    <ScrollView
-        android:id="@+id/scrollView2"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/pay_back">
 
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-
-            android:background="@drawable/donate_money"></RelativeLayout>
-
-    </ScrollView>
+    </RelativeLayout>
 
 
     <EditText
         android:id="@+id/input_pay"
         android:layout_width="301dp"
-        android:layout_height="wrap_content"
+        android:layout_height="55dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="223dp"
+        android:layout_marginBottom="242dp"
+        android:background="@drawable/amount_editable"
         android:hint="Enter amount"
         android:inputType="textEmailAddress"
         android:text="11"
@@ -46,8 +44,10 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="110dp"
+        android:layout_marginBottom="177dp"
+        android:background="@drawable/pay_utton"
         android:text="pay "
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
