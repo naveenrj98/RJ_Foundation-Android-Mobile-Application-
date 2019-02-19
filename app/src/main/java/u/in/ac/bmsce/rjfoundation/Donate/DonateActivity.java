@@ -6,9 +6,7 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.net.Uri;
 import android.support.annotation.Nullable;
-import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
-import android.support.design.widget.Snackbar;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.view.ViewPager;
@@ -21,9 +19,7 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.github.clans.fab.FloatingActionMenu;
@@ -34,10 +30,7 @@ import org.json.JSONObject;
 
 import instamojo.library.InstamojoPay;
 import instamojo.library.InstapayListener;
-import u.in.ac.bmsce.rjfoundation.Gallery.FriendsFragment;
-import u.in.ac.bmsce.rjfoundation.Gallery.GalleryActivity;
-import u.in.ac.bmsce.rjfoundation.Gallery.GalleryFragment;
-import u.in.ac.bmsce.rjfoundation.Gallery.TeamFragment;
+import u.in.ac.bmsce.rjfoundation.Volunteer.VolunteerActivity;
 import u.in.ac.bmsce.rjfoundation.HomeActivity;
 import u.in.ac.bmsce.rjfoundation.News.NewsActivity;
 import u.in.ac.bmsce.rjfoundation.Profile.AccountSettingsActivity;
@@ -372,7 +365,7 @@ public class DonateActivity extends AppCompatActivity implements NavigationView.
 
         } else if (id == R.id.nav_gallery) {
             Log.d(TAG, "onClick: navigating to " + mContext.getString(R.string.edit_profile_fragment));
-            Intent intent = new Intent(this, GalleryActivity.class);
+            Intent intent = new Intent(this, VolunteerActivity.class);
             startActivity(intent);
 
 
@@ -394,7 +387,7 @@ public class DonateActivity extends AppCompatActivity implements NavigationView.
 
         }else if (id == R.id.nav_partners) {
             Log.d(TAG, "onClick: navigating to " + mContext.getString(R.string.edit_profile_fragment));
-            Intent intent = new Intent(this, GalleryActivity.class);
+            Intent intent = new Intent(this, VolunteerActivity.class);
             startActivity(intent);
 
         }else if (id == R.id.nav_share) {

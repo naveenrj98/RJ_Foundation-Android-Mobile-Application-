@@ -4,9 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.support.annotation.NonNull;
-import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
-import android.support.design.widget.Snackbar;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -27,12 +25,11 @@ import com.nostra13.universalimageloader.core.ImageLoader;
 
 import u.in.ac.bmsce.rjfoundation.AboutUs.AboutUsActivity;
 import u.in.ac.bmsce.rjfoundation.Donate.DonateActivity;
-import u.in.ac.bmsce.rjfoundation.Gallery.GalleryActivity;
+import u.in.ac.bmsce.rjfoundation.Volunteer.VolunteerActivity;
 import u.in.ac.bmsce.rjfoundation.Profile.DeveloperActivty;
 import u.in.ac.bmsce.rjfoundation.News.NewsActivity;
 import u.in.ac.bmsce.rjfoundation.Profile.AccountSettingsActivity;
 import u.in.ac.bmsce.rjfoundation.Profile.ProfileActivity;
-import u.in.ac.bmsce.rjfoundation.Profile.SignOutFragment;
 import u.in.ac.bmsce.rjfoundation.Sponsors.SponsorActivity;
 import u.in.ac.bmsce.rjfoundation.Users.LoginActivity;
 import u.in.ac.bmsce.rjfoundation.Utils.BottomNavigationViewHelper;
@@ -186,7 +183,7 @@ public class HomeActivity extends AppCompatActivity  implements NavigationView.O
             @Override
             public void onClick(View v) {
                 Log.d(TAG, "onClick: navigating to " + mContext.getString(R.string.edit_profile_fragment));
-                Intent intent = new Intent(HomeActivity.this, GalleryActivity.class);
+                Intent intent = new Intent(HomeActivity.this, VolunteerActivity.class);
                 startActivity(intent);
             }
         });
@@ -375,7 +372,7 @@ public static Intent getOpenFacebookIntent(Context context) {
 
         } else if (id == R.id.nav_gallery) {
             Log.d(TAG, "onClick: navigating to " + mContext.getString(R.string.edit_profile_fragment));
-            Intent intent = new Intent(this, GalleryActivity.class);
+            Intent intent = new Intent(this, VolunteerActivity.class);
             startActivity(intent);
 
 

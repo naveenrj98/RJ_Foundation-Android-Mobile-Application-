@@ -104,4 +104,31 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
+    <!--     Spinner Items-->
+
+    <string name="make_an_order">Make an order</string>
+    <string name="dialog_title">Items available in a shop</string>
+    <string name="ok_label">OK</string>
+    <string name="dismiss_label">Dismiss</string>
+    <string name="clear_all_label">Clear all</string>
+
+    <string-array name="names">
+        <item>Numbers of Hours per Day</item>
+        <item>1 Hours</item>
+        <item>2 Hours</item>
+        <item>2-4 Hours</item>
+        <item>4-6 Hours</item>
+
+
+    </string-array>
+    <string-array name="days_of_volunteer_itmes">
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+        <item>Sunday</item>
+    </string-array>
+
 </resources>

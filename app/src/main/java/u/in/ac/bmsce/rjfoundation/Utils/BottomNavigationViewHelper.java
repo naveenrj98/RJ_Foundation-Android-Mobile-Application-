@@ -13,7 +13,7 @@ import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
 
 import u.in.ac.bmsce.rjfoundation.HomeActivity;
 import u.in.ac.bmsce.rjfoundation.Donate.DonateActivity;
-import u.in.ac.bmsce.rjfoundation.Gallery.GalleryActivity;
+import u.in.ac.bmsce.rjfoundation.Volunteer.VolunteerActivity;
 import u.in.ac.bmsce.rjfoundation.News.NewsActivity;
 import u.in.ac.bmsce.rjfoundation.Profile.ProfileActivity;
 import u.in.ac.bmsce.rjfoundation.R;
@@ -54,7 +54,7 @@ public class BottomNavigationViewHelper {
                         break;
 
                     case R.id.ic_alert:
-                        Intent intent4 = new Intent(context, GalleryActivity.class);//ACTIVITY_NUM = 3
+                        Intent intent4 = new Intent(context, VolunteerActivity.class);//ACTIVITY_NUM = 3
                         context.startActivity(intent4);
                         break;
 

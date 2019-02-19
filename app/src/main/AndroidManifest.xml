@@ -56,20 +56,15 @@
             android:label="RJ_REGI" />
         <activity android:name=".Donate.DonateActivity" />
         <activity android:name=".Profile.ProfileActivity" />
-        <activity android:name=".Gallery.GalleryActivity" />
-        <activity android:name=".AboutUs.AboutUsActivity"
+        <activity android:name=".Volunteer.VolunteerActivity" />
+        <activity
+            android:name=".AboutUs.AboutUsActivity"
             android:label="ABOUTUS">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
-
-
-
-
-
         </activity>
         <activity android:name=".Donate.DonateDollerActivity" />
         <activity android:name=".Donate.DonateFoodActivity" />
@@ -107,8 +102,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Sponsors.SponsorActivity"
+        <activity
+            android:name=".Sponsors.SponsorActivity"
             android:label="sponsor">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Gallery.GalleryActivity" />
+        <activity android:name=".Volunteer.Main2Activity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

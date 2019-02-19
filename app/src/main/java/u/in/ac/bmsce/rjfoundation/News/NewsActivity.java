@@ -4,9 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.support.annotation.Nullable;
-import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
-import android.support.design.widget.Snackbar;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -22,7 +20,7 @@ import com.github.clans.fab.FloatingActionMenu;
 import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
 
 import u.in.ac.bmsce.rjfoundation.Donate.DonateActivity;
-import u.in.ac.bmsce.rjfoundation.Gallery.GalleryActivity;
+import u.in.ac.bmsce.rjfoundation.Volunteer.VolunteerActivity;
 import u.in.ac.bmsce.rjfoundation.HomeActivity;
 import u.in.ac.bmsce.rjfoundation.Profile.AccountSettingsActivity;
 import u.in.ac.bmsce.rjfoundation.Profile.DeveloperActivty;
@@ -260,7 +258,7 @@ public class NewsActivity extends AppCompatActivity implements NavigationView.On
 
         } else if (id == R.id.nav_gallery) {
             Log.d(TAG, "onClick: navigating to " + mContext.getString(R.string.edit_profile_fragment));
-            Intent intent = new Intent(this, GalleryActivity.class);
+            Intent intent = new Intent(this, VolunteerActivity.class);
             startActivity(intent);
 
 
@@ -282,7 +280,7 @@ public class NewsActivity extends AppCompatActivity implements NavigationView.On
 
         }else if (id == R.id.nav_partners) {
             Log.d(TAG, "onClick: navigating to " + mContext.getString(R.string.edit_profile_fragment));
-            Intent intent = new Intent(this, GalleryActivity.class);
+            Intent intent = new Intent(this, VolunteerActivity.class);
             startActivity(intent);
 
         }else if (id == R.id.nav_share) {
