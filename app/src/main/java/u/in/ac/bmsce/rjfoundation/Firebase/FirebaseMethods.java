@@ -14,6 +14,8 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
+import java.util.ArrayList;
+
 import u.in.ac.bmsce.rjfoundation.R;
 import u.in.ac.bmsce.rjfoundation.Utils.StringManipulation;
 import u.in.ac.bmsce.rjfoundation.models.User;
@@ -321,6 +323,77 @@ public class FirebaseMethods {
             }
         }
         return new UserSettings(user, settings);
+
+    }
+
+
+    /**
+     * Add information to the
+     * Add information to the user_account_settings node
+     * @param name
+     * @param age
+     * @param profession
+     * @param hqualification
+     * @param daysofteaching
+     * @param numberofhours
+     * @param contactnumber
+     * @param email
+     */
+    public void addFriends(String name, String age, String profession, String hqualification, String numberofhours, String contactnumber, String email, ArrayList<Integer> daysofteaching){
+
+        if(name != null){
+            myRef.child(mContext.getString(R.string.dbname_friends))
+                    .child(userID)
+                    .child(mContext.getString(R.string.field_friendname))
+                    .setValue(name);
+        }
+
+
+        if(age != null){
+            myRef.child(mContext.getString(R.string.dbname_friends))
+                    .child(userID)
+                    .child(mContext.getString(R.string.field_friendemail))
+                    .setValue(age);
+        }
+
+        if(profession != null){
+            myRef.child(mContext.getString(R.string.dbname_friends))
+                    .child(userID)
+                    .child(mContext.getString(R.string.field_friendprofession))
+                    .setValue(profession);
+        }
+
+        if(hqualification != null){
+            myRef.child(mContext.getString(R.string.dbname_friends))
+                    .child(userID)
+                    .child(mContext.getString(R.string.field_friendhqualification))
+                    .setValue(hqualification);
+        }
+
+        if (numberofhours!=null){
+            myRef.child(mContext.getString(R.string.dbname_friends))
+                    .child(userID)
+                    .child(mContext.getString(R.string.field_friendhoursperday))
+                    .setValue(numberofhours);
+        }
+        if (contactnumber!=null){
+            myRef.child(mContext.getString(R.string.dbname_friends))
+                    .child(userID)
+                    .child(mContext.getString(R.string.field_friendcontact))
+                    .setValue(contactnumber);
+        }
+        if (email!=null){
+            myRef.child(mContext.getString(R.string.dbname_friends))
+                    .child(userID)
+                    .child(mContext.getString(R.string.field_friendemail))
+                    .setValue(email);
+        }
+        if (daysofteaching!=null){
+            myRef.child(mContext.getString(R.string.dbname_friends))
+                    .child(userID)
+                    .child(mContext.getString(R.string.field_frienddays))
+                    .setValue(daysofteaching);
+        }
 
     }
 

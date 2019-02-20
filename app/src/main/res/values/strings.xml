@@ -33,6 +33,7 @@
     <string name="dbname_user_photos">user_photos</string>
     <string name="dbname_following">following</string>
     <string name="dbname_followers">followers</string>
+    <string name="dbname_friends">friends</string>
     <string name="field_username">username</string>
     <string name="field_email">email</string>
     <string name="field_display_name">display_name</string>
@@ -47,7 +48,14 @@
     <string name="field_tags">tags</string>
     <string name="field_image_path">image_path</string>
     <string name="field_comments">comments</string>
-
+    <string name="field_friendname">friendname</string>
+    <string name="field_friendage">friendage</string>
+    <string name="field_friendprofession">friendprofession</string>
+    <string name="field_friendhqualification">friendhqualification</string>
+    <string name="field_friendhoursperday">friendhoursperday</string>
+    <string name="field_friendcontact">friendcontact</string>
+    <string name="field_friendemail">friendemail</string>
+    <string name="field_frienddays">frienddays</string>
 
     <!-- photo types -->
     <string name="new_photo">new_photo</string>
@@ -114,7 +122,7 @@
 
     <string-array name="names">
         <item>Numbers of Hours per Day</item>
-        <item>1 Hours</item>
+        <item>1 Hour</item>
         <item>2 Hours</item>
         <item>2-4 Hours</item>
         <item>4-6 Hours</item>
