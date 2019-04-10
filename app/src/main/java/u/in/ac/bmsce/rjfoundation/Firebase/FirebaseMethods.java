@@ -18,6 +18,7 @@ import java.util.ArrayList;
 
 import u.in.ac.bmsce.rjfoundation.R;
 import u.in.ac.bmsce.rjfoundation.Utils.StringManipulation;
+import u.in.ac.bmsce.rjfoundation.models.TeachingSettings;
 import u.in.ac.bmsce.rjfoundation.models.User;
 import u.in.ac.bmsce.rjfoundation.models.UserAccountSettings;
 import u.in.ac.bmsce.rjfoundation.models.UserSettings;
@@ -85,6 +86,51 @@ public class FirebaseMethods {
                     .setValue(phoneNumber);
         }
     }
+
+
+
+    /**
+     * Update 'user_account_settings' node for the current user
+     * @param name
+     * @param email
+     * @param subject
+     * @param messege
+     */
+    public void Contactupdate(String name, String email, String subject, String messege){
+
+        Log.d(TAG, "updateUserAccountSettings: updating user account settings.");
+
+        if(name != null){
+            myRef.child(mContext.getString(R.string.dbname_user_account_settings))
+                    .child(userID)
+                    .child(mContext.getString(R.string.field_cname))
+                    .setValue(name);
+        }
+
+
+        if(email != null) {
+            myRef.child(mContext.getString(R.string.dbname_user_account_settings))
+                    .child(userID)
+                    .child(mContext.getString(R.string.field_cemail))
+                    .setValue(email);
+        }
+
+        if(subject != null) {
+            myRef.child(mContext.getString(R.string.dbname_user_account_settings))
+                    .child(userID)
+                    .child(mContext.getString(R.string.field_csubject))
+                    .setValue(subject);
+        }
+
+        if(messege != null) {
+            myRef.child(mContext.getString(R.string.dbname_user_account_settings))
+                    .child(userID)
+                    .child(mContext.getString(R.string.field_cmessage))
+                    .setValue(messege);
+        }
+    }
+
+
 
     /**
      * update username in the 'users' node and 'user_account_settings' node
@@ -396,6 +442,44 @@ public class FirebaseMethods {
         }
 
     }
+
+    /**
+     * Add information to the users nodes
+     * Add information to the user_account_settings node
+     *
+     * @param days
+     * @param qualification
+     * @param profession
+     * @param hours
+     * @param age
+     */
+
+    public void addTeaching(String tusername,
+                            String age,
+                            String profession, String qualification,String days, String hours){
+
+//        User user = new User( userID,  1,  email,  StringManipulation.condenseUsername(username) );
+//
+//        myRef.child(mContext.getString(R.string.dbname_users))
+//                .child(userID)
+//                .setValue(user);
+
+
+        TeachingSettings settings = new TeachingSettings(
+                tusername,
+                age,
+                days,
+                hours,
+                qualification,
+                profession
+        );
+
+        myRef.child(mContext.getString(R.string.dbname_user_account_settings))
+                .child(userID)
+                .setValue(settings);
+
+    }
+
 
 }
 

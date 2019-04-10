@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#F2F2F2"
+
+    >
+
+    <View
+        android:id="@+id/rectangle"
+        android:layout_width="324dp"
+        android:layout_height="154dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:alpha="0.9"
+        android:background="@drawable/rectangle_2"
+        tools:layout_editor_absoluteX="54dp"
+        tools:layout_editor_absoluteY="205dp" />
+
+</android.support.constraint.ConstraintLayout>

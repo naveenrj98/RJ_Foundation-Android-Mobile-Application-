@@ -53,16 +53,19 @@ public class DonorActivity extends AppCompatActivity {
         registerReceiver(instamojoPay, filter);
         JSONObject pay = new JSONObject();
         try {
+
             pay.put("email", email);
             pay.put("phone", phone);
             pay.put("purpose", purpose);
             pay.put("amount", amount);
             pay.put("name", buyername);
-       pay.put("send_sms", true);
-      pay.put("send_email", true);
+            pay.put("send_sms", true);
+            pay.put("send_email", true);
+
  } catch (JSONException e) {
             e.printStackTrace();
         }
+
         initListener();
         instamojoPay.start(activity, pay, listener);
     }

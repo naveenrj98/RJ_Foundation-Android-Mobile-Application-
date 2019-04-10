@@ -29,6 +29,7 @@
     <!-- Firebase database fields -->
     <string name="dbname_users">users</string>
     <string name="dbname_user_account_settings">user_account_settings</string>
+    <string name="contact_details">contact_details</string>
     <string name="dbname_photos">photos</string>
     <string name="dbname_user_photos">user_photos</string>
     <string name="dbname_following">following</string>
@@ -36,6 +37,10 @@
     <string name="dbname_friends">friends</string>
     <string name="field_username">username</string>
     <string name="field_email">email</string>
+    <string name="field_cemail">email</string>
+    <string name="field_cname">name</string>
+    <string name="field_csubject">subject</string>
+    <string name="field_cmessage">message</string>
     <string name="field_display_name">display_name</string>
     <string name="field_website">website</string>
     <string name="field_description">description</string>
@@ -138,5 +143,17 @@
         <item>Saturday</item>
         <item>Sunday</item>
     </string-array>
+
+    <string name="thanks_for_">
+
+Thanks For Your Support
+</string>
+
+    <string name="sign_in">
+
+SIgn In
+</string>
+
+
 
 </resources>

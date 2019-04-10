@@ -23,7 +23,7 @@
                 android:layout_marginTop="8dp">
 
                 <EditText
-                    android:id="@+id/input_username"
+                    android:id="@+id/input_cname"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Name"
@@ -38,7 +38,7 @@
                 android:layout_marginTop="8dp">
 
                 <EditText
-                    android:id="@+id/input_email"
+                    android:id="@+id/input_cemail"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Email"
@@ -54,7 +54,7 @@
                 android:layout_marginTop="8dp">
 
                 <EditText
-                    android:id="@+id/input_password"
+                    android:id="@+id/input_subject"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Subject"
@@ -69,7 +69,7 @@
                 android:layout_marginTop="8dp">
 
                 <EditText
-                    android:id="@+id/editText"
+                    android:id="@+id/input_message"
                     android:layout_width="match_parent"
                     android:layout_height="175dp"
                     android:ems="10"
@@ -88,7 +88,7 @@
     android:layout_height="match_parent">
 
     <Button
-        android:id="@+id/btn_register"
+        android:id="@+id/btn_csubmit"
         android:layout_width="207dp"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
