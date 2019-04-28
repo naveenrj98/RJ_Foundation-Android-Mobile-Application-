@@ -33,7 +33,7 @@
             android:id="@+id/relLayout2"
             android:layout_below="@+id/relLayout1">
 
-            <include layout="@layout/snippet_center_home"/>
+            <include layout="@layout/snippet_center_home1"/>
 
 
         </RelativeLayout>

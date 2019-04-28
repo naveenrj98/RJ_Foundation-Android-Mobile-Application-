@@ -88,21 +88,17 @@
 
         <activity
             android:name=".FloatingActivity"
-            android:label="float">
-
-        </activity>
-        <activity android:name=".HelpActivity">
-
-        </activity>
+            android:label="float" />
+        <activity android:name=".HelpActivity" />
         <activity
             android:name=".Sponsors.SponsorActivity"
-            android:label="sponsor">
-
-        </activity>
+            android:label="sponsor" />
         <activity android:name=".Gallery.GalleryActivity" />
-        <activity android:name=".Volunteer.Main2Activity">
-
-        </activity>
+        <activity android:name=".Volunteer.Main2Activity" />
+        <activity android:name=".Donate.DonateStudyMaterial" />
+        <activity android:name=".Donate.DonateOldStuff" />
+        <activity android:name=".Donate.DonateAGirl" />
+        <activity android:name=".Donate.DonateOnSpecialOccassion"></activity>
     </application>
 
 </manifest>

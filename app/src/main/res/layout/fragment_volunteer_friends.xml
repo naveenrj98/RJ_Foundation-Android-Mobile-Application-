@@ -1,14 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/azure">
+   >
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        >
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="1024dp">
             <LinearLayout
                 android:scrollbars="vertical"
                 android:id="@+id/linearLayout"
-                android:layout_width="295dp"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_centerHorizontal="true"
                 android:layout_marginBottom="8dp"
@@ -87,6 +97,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
                         android:paddingLeft="4dp"
+                        android:textAlignment="center"
                         android:paddingTop="10dp"
                         android:textStyle="bold"
 
@@ -101,6 +112,7 @@
                     android:id="@+id/spin_hours"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
+
 
 
                     />
@@ -144,10 +156,10 @@
             </LinearLayout>
 
 
+</RelativeLayout>
+
+    </ScrollView>
 
 
 
-
-
-
-</ScrollView>
+</RelativeLayout>

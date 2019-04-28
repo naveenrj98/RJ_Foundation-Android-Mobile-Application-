@@ -10,11 +10,13 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.CardView;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.GridLayout;
 import android.widget.TextView;
 
 import com.github.clans.fab.FloatingActionMenu;
@@ -25,6 +27,7 @@ import com.nostra13.universalimageloader.core.ImageLoader;
 
 import u.in.ac.bmsce.rjfoundation.AboutUs.AboutUsActivity;
 import u.in.ac.bmsce.rjfoundation.Donate.DonateActivity;
+import u.in.ac.bmsce.rjfoundation.Gallery.GalleryActivity;
 import u.in.ac.bmsce.rjfoundation.Volunteer.VolunteerActivity;
 import u.in.ac.bmsce.rjfoundation.Profile.DeveloperActivty;
 import u.in.ac.bmsce.rjfoundation.News.NewsActivity;
@@ -42,6 +45,7 @@ public class HomeActivity extends AppCompatActivity  implements NavigationView.O
 
     //Widgets
     private TextView tv_donate, tv_volunteer, tv_todaysevent, tv_sponsor, tv_profile, tv_developers,tv_abotus;
+    GridLayout mg1,mg2,mg3,mg4,mg5;
 
     //context
     private Context mContext = HomeActivity.this;
@@ -66,16 +70,29 @@ public class HomeActivity extends AppCompatActivity  implements NavigationView.O
         setContentView(R.layout.activity_main);
         Log.d(TAG, "onCreate: starting.");
 
-        tv_donate = findViewById(R.id.tv_donate);
-        tv_volunteer = findViewById(R.id.tv_volunteer);
-        tv_todaysevent = findViewById(R.id.tv_todayevent);
-        tv_sponsor = findViewById(R.id.tv_sponsor);
-        tv_profile = findViewById(R.id.tv_profile);
-        tv_developers = findViewById(R.id.tv_developers);
-        tv_abotus = findViewById(R.id.tv_aboutus);
+//        tv_donate = findViewById(R.id.tv_donate);
+//        tv_volunteer = findViewById(R.id.tv_volunteer);
+//        tv_todaysevent = findViewById(R.id.tv_todayevent);
+//        tv_sponsor = findViewById(R.id.tv_sponsor);
+//        tv_profile = findViewById(R.id.tv_profile);
+//        tv_developers = findViewById(R.id.tv_developers);
+//        tv_abotus = findViewById(R.id.tv_aboutus);
+
+        mg1 = findViewById(R.id.gl);
+        mg2 = findViewById(R.id.gl2);
+        mg3 = findViewById(R.id.gl3);
+        mg4 = findViewById(R.id.gl4);
+        mg5 = findViewById(R.id.gl5);
+
+        clickDonate(mg1);
+        clickSecondGrid(mg2);
+        clickVolunteer(mg3);
+        clickfourthGgrid(mg4);
+        clickAboutUs(mg5);
+
         setupFirebaseAuth();
         initImageLoader();
-        setupBottomNavigationView();
+      //  setupBottomNavigationView();
 
 
 // --------------------------------------Floating Action ------------------------------------------------------------------
@@ -160,69 +177,196 @@ public class HomeActivity extends AppCompatActivity  implements NavigationView.O
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-//-----------------------------------------Onclick Listeners-----------------------------------------------------------------
-        tv_donate.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Log.d(TAG, "onClick: navigating to " + mContext.getString(R.string.edit_profile_fragment));
-                Intent intent = new Intent(HomeActivity.this, DonateActivity.class);
-                intent.putExtra(getString(R.string.calling_activity), getString(R.string.profile_activity));
-                startActivity(intent);
-            }
-        });
-        tv_sponsor.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+////-----------------------------------------Onclick Listeners-----------------------------------------------------------------
+//        tv_donate.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Log.d(TAG, "onClick: navigating to " + mContext.getString(R.string.edit_profile_fragment));
+//                Intent intent = new Intent(HomeActivity.this, DonateActivity.class);
+//                intent.putExtra(getString(R.string.calling_activity), getString(R.string.profile_activity));
+//                startActivity(intent);
+//            }
+//        });
+//        tv_sponsor.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//
+//                Log.d(TAG, "onClick: navigating to " + mContext.getString(R.string.edit_profile_fragment));
+//                Intent intent = new Intent(HomeActivity.this, SponsorActivity.class);
+//                startActivity(intent);
+//            }
+//        });
+//        tv_volunteer.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Log.d(TAG, "onClick: navigating to " + mContext.getString(R.string.edit_profile_fragment));
+//                Intent intent = new Intent(HomeActivity.this, VolunteerActivity.class);
+//                startActivity(intent);
+//            }
+//        });
+//        tv_todaysevent.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Log.d(TAG, "onClick: navigating to " + mContext.getString(R.string.edit_profile_fragment));
+//                Intent intent = new Intent(HomeActivity.this, NewsActivity.class);
+//                startActivity(intent);
+//            }
+//        });
+//
+//        tv_profile.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Log.d(TAG, "onClick: navigating to " + mContext.getString(R.string.edit_profile_fragment));
+//                Intent intent = new Intent(HomeActivity.this, ProfileActivity.class);
+//                startActivity(intent);
+//            }
+//        });
+//        tv_developers.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Log.d(TAG, "onClick: navigating to " + mContext.getString(R.string.edit_profile_fragment));
+//                Intent intent = new Intent(HomeActivity.this, DeveloperActivty.class);
+//                startActivity(intent);
+//            }
+//        });
+//        tv_abotus.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Log.d(TAG, "onClick: navigating to " + mContext.getString(R.string.edit_profile_fragment));
+//                Intent intent = new Intent(HomeActivity.this, AboutUsActivity.class);
+//                startActivity(intent);
+//            }
+//        });
+//
 
-                Log.d(TAG, "onClick: navigating to " + mContext.getString(R.string.edit_profile_fragment));
-                Intent intent = new Intent(HomeActivity.this, SponsorActivity.class);
-                startActivity(intent);
-            }
-        });
-        tv_volunteer.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Log.d(TAG, "onClick: navigating to " + mContext.getString(R.string.edit_profile_fragment));
-                Intent intent = new Intent(HomeActivity.this, VolunteerActivity.class);
-                startActivity(intent);
-            }
-        });
-        tv_todaysevent.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Log.d(TAG, "onClick: navigating to " + mContext.getString(R.string.edit_profile_fragment));
-                Intent intent = new Intent(HomeActivity.this, NewsActivity.class);
-                startActivity(intent);
-            }
-        });
-
-        tv_profile.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Log.d(TAG, "onClick: navigating to " + mContext.getString(R.string.edit_profile_fragment));
-                Intent intent = new Intent(HomeActivity.this, ProfileActivity.class);
-                startActivity(intent);
-            }
-        });
-        tv_developers.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Log.d(TAG, "onClick: navigating to " + mContext.getString(R.string.edit_profile_fragment));
-                Intent intent = new Intent(HomeActivity.this, DeveloperActivty.class);
-                startActivity(intent);
-            }
-        });
-        tv_abotus.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Log.d(TAG, "onClick: navigating to " + mContext.getString(R.string.edit_profile_fragment));
-                Intent intent = new Intent(HomeActivity.this, AboutUsActivity.class);
-                startActivity(intent);
-            }
-        });
 
 
+    }
 
+    private void clickfourthGgrid(GridLayout mg4) {
+        for (int i = 0; i < mg4.getChildCount(); i++) {
+
+
+            CardView cv = (CardView) mg4.getChildAt(i);
+            final int finali = i;
+            cv.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+
+                    if (finali == 0) {
+                        Log.d(TAG, "onClick: navigating to " + mContext.getString(R.string.edit_profile_fragment));
+                        Intent intent = new Intent(HomeActivity.this, ProfileActivity.class);
+                        startActivity(intent);
+
+                    } else if (finali == 1) {
+
+                        Log.d(TAG, "onClick: navigating to " + mContext.getString(R.string.edit_profile_fragment));
+                        Intent intent = new Intent(HomeActivity.this, GalleryActivity.class);
+                        startActivity(intent);
+
+                    }
+
+                }
+            });
+
+        }
+
+
+    }
+
+    private void clickAboutUs(GridLayout mg5) {
+        for (int i = 0; i < mg5.getChildCount(); i++) {
+
+
+            CardView cv = (CardView) mg5.getChildAt(i);
+            final int finali = i;
+            cv.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+
+                    Log.d(TAG, "onClick: navigating to " + mContext.getString(R.string.edit_profile_fragment));
+                    Intent intent = new Intent(HomeActivity.this, AboutUsActivity.class);
+                    startActivity(intent);
+
+                }
+            });
+
+        }
+    }
+
+    private void clickVolunteer(GridLayout mg3) {
+
+        for (int i = 0; i < mg3.getChildCount(); i++) {
+
+
+            CardView cv = (CardView) mg3.getChildAt(i);
+            final int finali = i;
+            cv.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+
+                    Log.d(TAG, "onClick: navigating to " + mContext.getString(R.string.edit_profile_fragment));
+                    Intent intent = new Intent(HomeActivity.this, VolunteerActivity.class);
+                    startActivity(intent);
+                }
+            });
+
+        }
+    }
+
+    private void clickSecondGrid(GridLayout mg2) {
+
+        for (int i = 0; i < mg2.getChildCount(); i++) {
+
+
+            CardView cv = (CardView) mg2.getChildAt(i);
+            final int finali = i;
+            cv.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+
+                    if (finali == 0) {
+                        Log.d(TAG, "onClick: navigating to " + mContext.getString(R.string.edit_profile_fragment));
+                        Intent intent = new Intent(HomeActivity.this, NewsActivity.class);
+                        startActivity(intent);
+
+                    } else if (finali == 1) {
+
+                        Log.d(TAG, "onClick: navigating to " + mContext.getString(R.string.edit_profile_fragment));
+                        Intent intent = new Intent(HomeActivity.this, SponsorActivity.class);
+                        startActivity(intent);
+
+                    }
+
+                }
+            });
+
+        }
+
+
+
+
+    }
+
+    private void clickDonate(GridLayout mg1) {
+
+        for (int i = 0; i < mg1.getChildCount(); i++) {
+
+
+            CardView cv = (CardView) mg1.getChildAt(i);
+            final int finali = i;
+            cv.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+
+                    Log.d(TAG, "onClick: navigating to " + mContext.getString(R.string.edit_profile_fragment));
+                    Intent intent = new Intent(HomeActivity.this, DonateActivity.class);
+                    startActivity(intent);
+
+                }
+            });
+
+        }
 
     }
 

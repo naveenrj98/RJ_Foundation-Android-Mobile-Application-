@@ -1,87 +1,16 @@
-<merge xmlns:tools="http://schemas.android.com/tools"
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:background="@color/azure">
 
 
-    <android.support.constraint.ConstraintLayout
+    <LinearLayout
+      android:gravity="center"
+        android:id="@+id/linl1"
+        android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-       >
-
-
-        <TextView
-            android:id="@+id/tvPosts"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="44dp"
-            android:text="250"
-            android:textColor="@color/black"
-            android:textSize="18sp"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:id="@+id/textPosts"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="8dp"
-            android:layout_marginTop="-8dp"
-            android:text="HEARTS"
-            android:textSize="12sp"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvPosts" />
-
-        <TextView
-            android:id="@+id/tvFollowers"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="8dp"
-            android:layout_marginTop="44dp"
-            android:text="300"
-            android:textColor="@color/black"
-            android:textSize="18sp"
-            app:layout_constraintLeft_toRightOf="@+id/tvPosts"
-            app:layout_constraintRight_toLeftOf="@+id/tvFollowing"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:id="@+id/textFollowers"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="4dp"
-            android:layout_marginRight="8dp"
-            android:layout_marginTop="-8dp"
-            android:text="DONATION"
-            android:textSize="12sp"
-            app:layout_constraintHorizontal_bias="0.526"
-            app:layout_constraintLeft_toRightOf="@+id/textPosts"
-            app:layout_constraintRight_toLeftOf="@+id/textFollolwing"
-            app:layout_constraintTop_toBottomOf="@+id/tvFollowers" />
-
-        <TextView
-            android:id="@+id/tvFollowing"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="16dp"
-            android:layout_marginTop="44dp"
-            android:text="400"
-            android:textColor="@color/black"
-            android:textSize="18sp"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:id="@+id/textFollolwing"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="16dp"
-            android:text="STARS"
-            android:textSize="12sp"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvFollowing" />
+        android:layout_alignParentTop="true">
 
         <TextView
             android:id="@+id/textEditProfile"
@@ -94,16 +23,208 @@
             android:background="@color/azure"
             android:text="Edit your profile"
             android:textAlignment="center"
-            android:textColor="@color/link_blue"
+            android:textColor="@color/link_blue"/>
 
-            android:textSize="16sp"
-            app:layout_constraintBottom_toTopOf="@+id/tvFollowers"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
-    </android.support.constraint.ConstraintLayout>
 
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin2"
+        android:layout_width="wrap_content"
+        android:layout_height="384dp"
+        android:layout_below="@+id/linl1"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/Hearts"
+            android:layout_width="2dp"
+            android:layout_height="62dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="1"
+            android:src="@drawable/like"
+            app:civ_border_color="@color/black"
+            app:civ_border_width="1dp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/money"
+            android:layout_width="0dp"
+            android:layout_height="61dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="1"
+            android:src="@drawable/money"
+            app:civ_border_color="@color/black"
+            app:civ_border_width="1dp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+
+            android:id="@+id/stars"
+            android:layout_width="0dp"
+            android:layout_height="59dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="1"
+            android:src="@drawable/reward"
+            app:civ_border_color="@color/black"
+            app:civ_border_width="2dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="199dp"
+        android:layout_marginTop="150dp"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+
+        <TextView
+            android:id="@+id/tvPosts"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="1"
+            android:gravity="center"
+
+            android:text="250"
+
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvFollowers"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="1"
+            android:gravity="center"
+
+            android:text="300"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvFollowing"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="400"
+
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <!--<android.support.constraint.ConstraintLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+
+
+    <!--<TextView-->
+    <!--android:id="@+id/tvPosts"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="16dp"-->
+    <!--android:layout_marginTop="44dp"-->
+    <!--android:text="250"-->
+    <!--android:textColor="@color/black"-->
+    <!--android:textSize="18sp"-->
+    <!--app:layout_constraintLeft_toLeftOf="parent"-->
+    <!--app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/textPosts"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="17dp"-->
+    <!--android:layout_marginLeft="8dp"-->
+    <!--android:layout_marginTop="-8dp"-->
+    <!--android:text="HEARTS"-->
+
+    <!--android:textSize="12sp"-->
+    <!--app:layout_constraintLeft_toLeftOf="parent"-->
+    <!--app:layout_constraintTop_toBottomOf="@+id/tvPosts" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tvFollowers"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="5dp"-->
+    <!--android:layout_marginRight="8dp"-->
+    <!--android:layout_marginTop="44dp"-->
+    <!--android:text="300"-->
+    <!--android:textColor="@color/black"-->
+    <!--android:textSize="18sp"-->
+    <!--app:layout_constraintLeft_toRightOf="@+id/tvPosts"-->
+    <!--app:layout_constraintRight_toLeftOf="@+id/tvFollowing"-->
+    <!--app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/textFollowers"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="4dp"-->
+    <!--android:layout_marginRight="8dp"-->
+    <!--android:layout_marginTop="-8dp"-->
+    <!--android:text="DONATION"-->
+    <!--android:textSize="12sp"-->
+    <!--app:layout_constraintHorizontal_bias="0.526"-->
+    <!--app:layout_constraintLeft_toRightOf="@+id/textPosts"-->
+    <!--app:layout_constraintRight_toLeftOf="@+id/textFollolwing"-->
+    <!--app:layout_constraintTop_toBottomOf="@+id/tvFollowers" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tvFollowing"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginRight="16dp"-->
+    <!--android:layout_marginTop="44dp"-->
+    <!--android:text="400"-->
+    <!--android:textColor="@color/black"-->
+    <!--android:textSize="18sp"-->
+    <!--app:layout_constraintRight_toRightOf="parent"-->
+    <!--app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/textFollolwing"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginRight="16dp"-->
+    <!--android:text="STARS"-->
+    <!--android:textSize="12sp"-->
+    <!--app:layout_constraintRight_toRightOf="parent"-->
+    <!--app:layout_constraintTop_toBottomOf="@+id/tvFollowing" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/textEditProfile"-->
+    <!--android:layout_width="176dp"-->
+    <!--android:layout_height="28dp"-->
+    <!--android:layout_marginBottom="8dp"-->
+    <!--android:layout_marginLeft="8dp"-->
+    <!--android:layout_marginRight="8dp"-->
+    <!--android:layout_marginTop="8dp"-->
+    <!--android:background="@color/azure"-->
+    <!--android:text="Edit your profile"-->
+    <!--android:textAlignment="center"-->
+    <!--android:textColor="@color/link_blue"-->
+
+    <!--android:textSize="16sp"-->
+    <!--app:layout_constraintBottom_toTopOf="@+id/tvFollowers"-->
+    <!--app:layout_constraintLeft_toLeftOf="parent"-->
+    <!--app:layout_constraintRight_toRightOf="parent"-->
+    <!--app:layout_constraintTop_toTopOf="parent"-->
+    <!--app:layout_constraintVertical_bias="0.0" />-->
+    <!--</android.support.constraint.ConstraintLayout>-->
 
 
 </merge>

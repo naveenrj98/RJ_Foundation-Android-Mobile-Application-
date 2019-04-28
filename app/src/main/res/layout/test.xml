@@ -1,0 +1,874 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/ll_1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <GridLayout
+
+            android:id="@+id/gl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnCount="1"
+            android:rowCount="1">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_columnWeight="1"
+                android:layout_marginBottom="6dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_rowWeight="1"
+                android:foreground="@drawable/ripple_effect"
+
+
+                app:cardElevation="8dp">
+
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/donate_m"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                       android:background="@drawable/t_m_donate"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+
+        </GridLayout>
+
+        <GridLayout
+            android:id="@+id/gl2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnCount="2"
+            android:rowCount="1">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_columnWeight="1"
+                android:layout_marginBottom="6dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="4dp"
+                android:layout_rowWeight="1"
+                android:foreground="@drawable/ripple_effect"
+
+                app:cardElevation="8dp">
+
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/seekhelp_m"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:background="@drawable/t_m_seekhelp"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="10dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_columnWeight="1"
+                android:layout_marginBottom="6dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="2dp"
+                android:layout_rowWeight="1"
+                android:foreground="@drawable/ripple_effect"
+
+                app:cardElevation="8dp">
+
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/sponsors_m"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/t_m_sponsors"
+
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+
+        </GridLayout>
+
+        <GridLayout
+
+            android:id="@+id/gl3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnCount="1"
+            android:rowCount="1">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_columnWeight="1"
+                android:layout_marginBottom="6dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_rowWeight="1"
+                android:foreground="@drawable/ripple_effect"
+
+                app:cardElevation="8dp">
+
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/volunteer_main"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="30dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+
+        </GridLayout>
+
+        <GridLayout
+            android:id="@+id/gl4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnCount="2"
+            android:rowCount="1">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_columnWeight="1"
+                android:layout_marginBottom="6dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="4dp"
+                android:layout_rowWeight="1"
+                android:foreground="@drawable/ripple_effect"
+
+                app:cardElevation="8dp">
+
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/profile_m"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/t_m_profile"
+
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_columnWeight="1"
+                android:layout_marginBottom="6dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="2dp"
+                android:layout_rowWeight="1"
+                android:foreground="@drawable/ripple_effect"
+
+                app:cardElevation="8dp">
+
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/gallery_m"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/t_m_gallery"
+
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+
+        </GridLayout>
+
+        <GridLayout
+
+            android:id="@+id/gl5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnCount="1"
+            android:rowCount="1">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_columnWeight="1"
+                android:layout_marginBottom="6dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_rowWeight="1"
+                android:foreground="@drawable/ripple_effect"
+
+                app:cardElevation="8dp">
+
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/aboutus_m"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="30dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+
+        </GridLayout>
+
+
+    </LinearLayout>
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:background="@drawable/home_backgroud"-->
+        <!--android:orientation="vertical"-->
+
+        <!--&gt;-->
+
+
+        <!--<GridLayout-->
+            <!--android:id="@+id/mainGrid"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="150dp"-->
+            <!--android:layout_weight="6.5"-->
+            <!--android:alignmentMode="alignMargins"-->
+            <!--android:columnCount="2"-->
+            <!--android:columnOrderPreserved="false"-->
+            <!--android:paddingTop="15dp"-->
+
+            <!--android:rowCount="4">-->
+
+            <!--&lt;!&ndash; Row 1 &ndash;&gt;-->
+
+            <!--&lt;!&ndash; Column 1 &ndash;&gt;-->
+            <!--<android.support.v7.widget.CardView-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="0dp"-->
+                <!--android:layout_columnWeight="1"-->
+                <!--android:layout_marginBottom="6dp"-->
+                <!--android:layout_marginLeft="9dp"-->
+                <!--android:layout_marginRight="4dp"-->
+                <!--android:layout_rowWeight="1"-->
+                <!--app:cardCornerRadius="8dp"-->
+                <!--app:cardElevation="8dp"-->
+                <!--android:foreground="@drawable/ripple_effect"-->
+                <!--&gt;-->
+
+
+                <!--<ImageView-->
+                    <!--android:layout_width="fill_parent"-->
+                    <!--android:layout_height="fill_parent"-->
+                    <!--android:background="@drawable/donate_home"/>-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center_horizontal|center_vertical"-->
+                    <!--android:layout_margin="16dp"-->
+                    <!--android:orientation="vertical">-->
+
+
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="Home"-->
+                        <!--android:textAlignment="center"-->
+                        <!--android:textColor="@android:color/black"-->
+                        <!--android:textSize="36dp"-->
+                        <!--android:textStyle="bold" />-->
+
+                <!--</LinearLayout>-->
+
+
+
+            <!--</android.support.v7.widget.CardView>-->
+
+            <!--&lt;!&ndash; Column 2 &ndash;&gt;-->
+            <!--<android.support.v7.widget.CardView-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="0dp"-->
+                <!--android:layout_columnWeight="1"-->
+                <!--android:layout_marginBottom="6dp"-->
+                <!--android:layout_marginLeft="4dp"-->
+                <!--android:layout_marginRight="9dp"-->
+                <!--android:layout_rowWeight="1"-->
+                <!--app:cardCornerRadius="8dp"-->
+                <!--app:cardElevation="8dp"-->
+                <!--android:foreground="@drawable/ripple_effect">-->
+
+
+
+                <!--&gt;-->
+                <!--<ImageView-->
+                    <!--android:layout_width="fill_parent"-->
+                    <!--android:layout_height="fill_parent"-->
+                    <!--android:background="@drawable/donate_home"-->
+                    <!--/>-->
+                <!--<LinearLayout-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center_horizontal|center_vertical"-->
+                    <!--android:layout_margin="16dp"-->
+                    <!--android:orientation="vertical">-->
+
+
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="Event"-->
+                        <!--android:id="@+id/tv_event"-->
+
+                        <!--android:textAlignment="center"-->
+                        <!--android:textColor="@android:color/black"-->
+                        <!--android:textSize="36dp"-->
+                        <!--android:textStyle="bold">-->
+
+                    <!--</TextView>-->
+
+                <!--</LinearLayout>-->
+
+            <!--</android.support.v7.widget.CardView>-->
+
+
+            <!--&lt;!&ndash; Row 2 &ndash;&gt;-->
+
+            <!--&lt;!&ndash; Column 1 &ndash;&gt;-->
+
+            <!--<android.support.v7.widget.CardView-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="0dp"-->
+                <!--android:layout_columnWeight="1"-->
+                <!--android:layout_marginBottom="6dp"-->
+                <!--android:layout_marginLeft="9dp"-->
+                <!--android:layout_marginRight="4dp"-->
+                <!--android:layout_rowWeight="1"-->
+                <!--app:cardCornerRadius="8dp"-->
+                <!--app:cardElevation="8dp"-->
+                <!--android:foreground="@drawable/ripple_effect">-->
+                <!--&gt;<ImageView-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="fill_parent"-->
+                <!--android:background="@drawable/donate_home1"/>-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center_horizontal|center_vertical"-->
+                    <!--android:layout_margin="16dp"-->
+                    <!--android:orientation="vertical">-->
+
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="Schedule"-->
+                        <!--android:textAlignment="center"-->
+
+                        <!--android:textColor="@android:color/black"-->
+                        <!--android:textSize="30dp"-->
+                        <!--android:textStyle="bold" />-->
+
+                <!--</LinearLayout>-->
+
+            <!--</android.support.v7.widget.CardView>-->
+
+            <!--&lt;!&ndash; Column 2 &ndash;&gt;-->
+            <!--<android.support.v7.widget.CardView-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="0dp"-->
+                <!--android:layout_columnWeight="1"-->
+                <!--android:layout_marginBottom="6dp"-->
+                <!--android:layout_marginLeft="4dp"-->
+                <!--android:layout_marginRight="9dp"-->
+                <!--android:layout_rowWeight="1"-->
+                <!--app:cardCornerRadius="8dp"-->
+                <!--app:cardElevation="8dp"-->
+                <!--android:foreground="@drawable/ripple_effect"-->
+                <!--&gt;-->
+                <!--<ImageView-->
+                    <!--android:layout_width="fill_parent"-->
+                    <!--android:layout_height="fill_parent"-->
+                    <!--android:background="@drawable/donate_home"/>-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center_horizontal|center_vertical"-->
+                    <!--android:layout_margin="16dp"-->
+                    <!--android:orientation="vertical">-->
+
+                    <!--<ImageView-->
+
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_gravity="center_horizontal" />-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="Gallery"-->
+                        <!--android:textAlignment="center"-->
+                        <!--android:textColor="@android:color/black"-->
+                        <!--android:textSize="36dp"-->
+                        <!--android:textStyle="bold" />-->
+
+                <!--</LinearLayout>-->
+
+            <!--</android.support.v7.widget.CardView>-->
+
+
+            <!--&lt;!&ndash; Row 2 &ndash;&gt;-->
+
+            <!--&lt;!&ndash; Column 1 &ndash;&gt;-->
+            <!--<android.support.v7.widget.CardView-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="0dp"-->
+                <!--android:layout_columnWeight="1"-->
+                <!--android:layout_marginBottom="6dp"-->
+                <!--android:layout_marginLeft="9dp"-->
+                <!--android:layout_marginRight="4dp"-->
+                <!--android:layout_rowWeight="1"-->
+                <!--app:cardCornerRadius="8dp"-->
+                <!--app:cardElevation="8dp"-->
+                <!--android:foreground="@drawable/ripple_effect"-->
+                <!--&gt;-->
+                <!--<ImageView-->
+                    <!--android:layout_width="fill_parent"-->
+                    <!--android:layout_height="fill_parent"-->
+                   <!--/>-->
+                <!--<LinearLayout-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center_horizontal|center_vertical"-->
+                    <!--android:layout_margin="16dp"-->
+                    <!--android:orientation="vertical">-->
+
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="Sponsers"-->
+                        <!--android:textAlignment="center"-->
+                        <!--android:textColor="@android:color/black"-->
+                        <!--android:textSize="30sp"-->
+                        <!--android:textStyle="bold" />-->
+
+                <!--</LinearLayout>-->
+
+            <!--</android.support.v7.widget.CardView>-->
+
+            <!--&lt;!&ndash; Column 2 &ndash;&gt;-->
+            <!--<android.support.v7.widget.CardView-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="0dp"-->
+                <!--android:layout_columnWeight="1"-->
+                <!--android:layout_marginBottom="6dp"-->
+                <!--android:layout_marginLeft="4dp"-->
+                <!--android:layout_marginRight="9dp"-->
+                <!--android:layout_rowWeight="1"-->
+                <!--app:cardCornerRadius="8dp"-->
+                <!--app:cardElevation="8dp"-->
+                <!--android:foreground="@drawable/ripple_effect">-->
+                <!--&gt;-->
+                <!--<ImageView-->
+                    <!--android:layout_width="fill_parent"-->
+                    <!--android:layout_height="fill_parent"-->
+                   <!--/>-->
+                <!--<LinearLayout-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center_horizontal|center_vertical"-->
+                    <!--android:layout_margin="16dp"-->
+                    <!--android:orientation="vertical">-->
+
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="Contacts"-->
+                        <!--android:paddingRight="10dp"-->
+                        <!--android:textAlignment="center"-->
+                        <!--android:textColor="@android:color/black"-->
+                        <!--android:textSize="30sp"-->
+                        <!--android:textStyle="bold" />-->
+
+                <!--</LinearLayout>-->
+
+            <!--</android.support.v7.widget.CardView>-->
+
+            <!--<android.support.v7.widget.CardView-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="0dp"-->
+                <!--android:layout_columnWeight="1"-->
+                <!--android:layout_marginBottom="6dp"-->
+                <!--android:layout_marginLeft="9dp"-->
+                <!--android:layout_marginRight="4dp"-->
+                <!--android:layout_rowWeight="1"-->
+                <!--app:cardCornerRadius="8dp"-->
+                <!--app:cardElevation="8dp"-->
+                <!--android:foreground="@drawable/ripple_effect"-->
+                <!--&gt;-->
+                <!--<ImageView-->
+                    <!--android:layout_width="fill_parent"-->
+                    <!--android:layout_height="fill_parent"-->
+                   <!--/>-->
+                <!--<LinearLayout-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center_horizontal|center_vertical"-->
+                    <!--android:layout_margin="16dp"-->
+                    <!--android:orientation="vertical">-->
+
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="Reach BMSCE"-->
+                        <!--android:textAlignment="center"-->
+                        <!--android:textColor="@android:color/black"-->
+                        <!--android:textSize="30sp"-->
+                        <!--android:textStyle="bold" />-->
+
+                <!--</LinearLayout>-->
+
+            <!--</android.support.v7.widget.CardView>-->
+
+            <!--<android.support.v7.widget.CardView-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="0dp"-->
+                <!--android:layout_columnWeight="1"-->
+                <!--android:layout_marginBottom="6dp"-->
+                <!--android:layout_marginLeft="4dp"-->
+                <!--android:layout_marginRight="9dp"-->
+                <!--android:layout_rowWeight="1"-->
+                <!--app:cardCornerRadius="8dp"-->
+                <!--app:cardElevation="8dp"-->
+
+                <!--android:foreground="@drawable/ripple_effect"-->
+                <!--&gt;-->
+                <!--<ImageView-->
+                    <!--android:layout_width="fill_parent"-->
+                    <!--android:layout_height="fill_parent"-->
+                    <!--android:background="@drawable/donate_home1"/>-->
+                <!--<LinearLayout-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center_horizontal|center_vertical"-->
+                    <!--android:layout_margin="16dp"-->
+                    <!--android:orientation="vertical">-->
+
+
+                    <!--<TextView-->
+                        <!--android:layout_width="250dp"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="Developers"-->
+                        <!--android:paddingRight="100dp"-->
+                        <!--android:textAlignment="center"-->
+                        <!--android:textColor="@android:color/black"-->
+                        <!--android:textSize="25sp"-->
+                        <!--android:textStyle="bold" />-->
+
+                <!--</LinearLayout>-->
+
+            <!--</android.support.v7.widget.CardView>-->
+
+            <!--&lt;!&ndash; <android.support.v7.widget.CardView-->
+                 <!--android:layout_width="0dp"-->
+                 <!--android:layout_height="0dp"-->
+                 <!--android:layout_columnWeight="1"-->
+                 <!--android:layout_rowWeight="1"-->
+                 <!--android:layout_marginBottom="16dp"-->
+                 <!--android:layout_marginLeft="16dp"-->
+                 <!--android:layout_marginRight="16dp"-->
+                 <!--app:cardElevation="8dp"-->
+                 <!--app:cardCornerRadius="8dp"-->
+                 <!--&gt;-->
+
+                 <!--<LinearLayout-->
+                     <!--android:layout_gravity="center_horizontal|center_vertical"-->
+                     <!--android:layout_margin="16dp"-->
+                     <!--android:orientation="vertical"-->
+                     <!--android:layout_width="wrap_content"-->
+                     <!--android:layout_height="wrap_content">-->
+
+                     <!--<ImageView-->
+                         <!--android:src="@drawable/calendar"-->
+                         <!--android:layout_gravity="center_horizontal"-->
+                         <!--android:layout_width="wrap_content"-->
+                         <!--android:layout_height="wrap_content" />-->
+
+                     <!--<TextView-->
+                         <!--android:text="Calendars"-->
+                         <!--android:textAlignment="center"-->
+                         <!--android:textColor="@android:color/black"-->
+                         <!--android:textSize="18sp"-->
+                         <!--android:textStyle="bold"-->
+                         <!--android:layout_width="wrap_content"-->
+                         <!--android:layout_height="wrap_content" />-->
+
+                 <!--</LinearLayout>-->
+
+             <!--</android.support.v7.widget.CardView>-->
+
+             <!--<android.support.v7.widget.CardView-->
+                 <!--android:layout_width="0dp"-->
+                 <!--android:layout_height="0dp"-->
+                 <!--android:layout_columnWeight="1"-->
+                 <!--android:layout_rowWeight="1"-->
+                 <!--android:layout_marginBottom="16dp"-->
+                 <!--android:layout_marginLeft="16dp"-->
+                 <!--android:layout_marginRight="16dp"-->
+                 <!--app:cardElevation="8dp"-->
+                 <!--app:cardCornerRadius="8dp"-->
+                 <!--&gt;-->
+
+                 <!--<LinearLayout-->
+                     <!--android:layout_gravity="center_horizontal|center_vertical"-->
+                     <!--android:layout_margin="16dp"-->
+                     <!--android:orientation="vertical"-->
+                     <!--android:layout_width="wrap_content"-->
+                     <!--android:layout_height="wrap_content">-->
+
+                     <!--<ImageView-->
+                         <!--android:src="@drawable/calendar"-->
+                         <!--android:layout_gravity="center_horizontal"-->
+                         <!--android:layout_width="wrap_content"-->
+                         <!--android:layout_height="wrap_content" />-->
+
+                     <!--<TextView-->
+                         <!--android:text="Calendars"-->
+                         <!--android:textAlignment="center"-->
+                         <!--android:textColor="@android:color/black"-->
+                         <!--android:textSize="18sp"-->
+                         <!--android:textStyle="bold"-->
+                         <!--android:layout_width="wrap_content"-->
+                         <!--android:layout_height="wrap_content" />-->
+
+                 <!--</LinearLayout>-->
+
+             <!--</android.support.v7.widget.CardView>-->
+
+             <!--<android.support.v7.widget.CardView-->
+                 <!--android:layout_width="0dp"-->
+                 <!--android:layout_height="0dp"-->
+                 <!--android:layout_columnWeight="1"-->
+                 <!--android:layout_rowWeight="1"-->
+                 <!--android:layout_marginBottom="16dp"-->
+                 <!--android:layout_marginLeft="16dp"-->
+                 <!--android:layout_marginRight="16dp"-->
+                 <!--app:cardElevation="8dp"-->
+                 <!--app:cardCornerRadius="8dp"-->
+                 <!--&gt;-->
+
+                 <!--<LinearLayout-->
+                     <!--android:layout_gravity="center_horizontal|center_vertical"-->
+                     <!--android:layout_margin="16dp"-->
+                     <!--android:orientation="vertical"-->
+                     <!--android:layout_width="wrap_content"-->
+                     <!--android:layout_height="wrap_content">-->
+
+                     <!--<ImageView-->
+                         <!--android:src="@drawable/calendar"-->
+                         <!--android:layout_gravity="center_horizontal"-->
+                         <!--android:layout_width="wrap_content"-->
+                         <!--android:layout_height="wrap_content" />-->
+
+                     <!--<TextView-->
+                         <!--android:text="Calendars"-->
+                         <!--android:textAlignment="center"-->
+                         <!--android:textColor="@android:color/black"-->
+                         <!--android:textSize="18sp"-->
+                         <!--android:textStyle="bold"-->
+                         <!--android:layout_width="wrap_content"-->
+                         <!--android:layout_height="wrap_content" />-->
+
+                 <!--</LinearLayout>-->
+
+             <!--</android.support.v7.widget.CardView>-->
+
+             <!--<android.support.v7.widget.CardView-->
+                 <!--android:layout_width="0dp"-->
+                 <!--android:layout_height="0dp"-->
+                 <!--android:layout_columnWeight="1"-->
+                 <!--android:layout_rowWeight="1"-->
+                 <!--android:layout_marginBottom="16dp"-->
+                 <!--android:layout_marginLeft="16dp"-->
+                 <!--android:layout_marginRight="16dp"-->
+                 <!--app:cardElevation="8dp"-->
+                 <!--app:cardCornerRadius="8dp"-->
+                 <!--&gt;-->
+
+                 <!--<LinearLayout-->
+                     <!--android:layout_gravity="center_horizontal|center_vertical"-->
+                     <!--android:layout_margin="16dp"-->
+                     <!--android:orientation="vertical"-->
+                     <!--android:layout_width="wrap_content"-->
+                     <!--android:layout_height="wrap_content">-->
+
+                     <!--<ImageView-->
+                         <!--android:src="@drawable/calendar"-->
+                         <!--android:layout_gravity="center_horizontal"-->
+                         <!--android:layout_width="wrap_content"-->
+                         <!--android:layout_height="wrap_content" />-->
+
+                     <!--<TextView-->
+                         <!--android:text="Calendars"-->
+                         <!--android:textAlignment="center"-->
+                         <!--android:textColor="@android:color/black"-->
+                         <!--android:textSize="18sp"-->
+                         <!--android:textStyle="bold"-->
+                         <!--android:layout_width="wrap_content"-->
+                         <!--android:layout_height="wrap_content" />-->
+
+                 <!--</LinearLayout>-->
+
+             <!--</android.support.v7.widget.CardView>&ndash;&gt;-->
+
+        <!--</GridLayout>-->
+
+    <!--</LinearLayout>-->
+
+</ScrollView>

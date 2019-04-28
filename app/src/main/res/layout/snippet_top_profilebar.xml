@@ -22,7 +22,7 @@
                     android:layout_centerVertical="true"
                     android:text="RJ_FOUNDATION"
                     android:textSize="20sp"
-                    android:textColor="@color/black"
+                    android:textColor="@color/white"
                     android:layout_marginStart="15dp"
                     android:id="@+id/username"/>
 

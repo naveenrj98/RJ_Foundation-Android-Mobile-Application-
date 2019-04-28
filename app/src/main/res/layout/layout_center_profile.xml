@@ -6,7 +6,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/azure">
+      >
 
 
         <!-- ********************Middle Section*************************** -->
@@ -44,7 +44,7 @@
             <RelativeLayout
                 android:id="@+id/rl_editprofile"
                 android:layout_width="269dp"
-                android:layout_height="157dp"
+                android:layout_height="238dp"
                 android:layout_alignParentTop="true"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="223dp"

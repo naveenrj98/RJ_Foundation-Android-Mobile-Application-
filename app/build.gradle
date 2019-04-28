@@ -55,5 +55,7 @@ dependencies {
     implementation 'com.google.firebase:firebase-database:16.0.6'
 
     implementation 'com.google.android.gms:play-services-maps:16.1.0'
+
+    implementation 'com.github.rey5137:material:1.2.4'
 }
 apply plugin: 'com.google.gms.google-services'

@@ -39,36 +39,6 @@ public class VolunteerGalleryFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
         final View view = inflater.inflate(R.layout.fragment_volunteer_galler, container, false);
-        et_username = view.findViewById(R.id.tusername);
-        et_age = view.findViewById(R.id.age);
-        et_days = view.findViewById(R.id.days);
-        et_hours = view.findViewById(R.id.hours);
-        et_profession = view.findViewById(R.id.profession);
-        et_qualification = view.findViewById(R.id.qaulification);
-        btn_submit =  view.findViewById(R.id.btn_submit);
-
-        btn_submit.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-
-                tusername =  et_username.getText().toString();
-                age =  et_age.getText().toString();
-                days =  et_days.getText().toString();
-                hours =  et_hours.getText().toString();
-                qualification =  et_qualification.getText().toString();
-                profession =  et_profession.getText().toString();
-
-                //add new user to the database
-                firebaseMethods.addTeaching(tusername,age,profession,qualification,days,hours);
-
-                Toast.makeText(mContext, "Signup successful. Sending verification email.", Toast.LENGTH_SHORT).show();
-
-            }
-        });
-
-
-
 
 
         return view;
