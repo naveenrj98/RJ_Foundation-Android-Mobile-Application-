@@ -36,7 +36,7 @@ public class DonorActivity extends AppCompatActivity {
 
 
     private EditText input_pay;
-    private String pay1;
+
 
     //add Firebase Database stuff
     private FirebaseDatabase mFirebaseDatabase;
@@ -100,12 +100,9 @@ public class DonorActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 input_pay = (EditText) findViewById(R.id.input_pay);
-                pay1 = input_pay.getText().toString();
+            String  pay1 = input_pay.getText().toString();
 
-                User user = new User();
-              String email =   user.getEmail().toString();
-              double phone = ((long) user.getPhone_number());
-              String username = user.getUsername().toString();
+
 
                callInstamojoPay("naveenkumarr97@gmail.com", "8073141525",pay1, "RJ FOUNDATION", "rj");
             //    callInstamojoPay(email, "8073141525",pay1, "RJ FOUNDATION", "rj");

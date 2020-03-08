@@ -16,6 +16,8 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.GridLayout;
 import android.widget.TextView;
 
@@ -83,6 +85,22 @@ public class HomeActivity extends AppCompatActivity  implements NavigationView.O
         mg3 = findViewById(R.id.gl3);
         mg4 = findViewById(R.id.gl4);
         mg5 = findViewById(R.id.gl5);
+
+        Animation animation = AnimationUtils.loadAnimation(getBaseContext(), R.anim.item_animation_fall_down);
+        mg1.startAnimation(animation);
+
+        Animation a = AnimationUtils.loadAnimation(getBaseContext(), R.anim.swing_up_right);
+        mg2.startAnimation(a);
+
+        Animation c = AnimationUtils.loadAnimation(getBaseContext(), R.anim.swing_up_left);
+        mg3.startAnimation(c);
+
+        Animation d = AnimationUtils.loadAnimation(getBaseContext(), R.anim.swing_up_right);
+        mg4.startAnimation(d);
+
+
+        Animation e = AnimationUtils.loadAnimation(getBaseContext(), R.anim.swing_up_left);
+        mg5.startAnimation(e);
 
         clickDonate(mg1);
         clickSecondGrid(mg2);
@@ -248,6 +266,7 @@ public class HomeActivity extends AppCompatActivity  implements NavigationView.O
 
 
             CardView cv = (CardView) mg4.getChildAt(i);
+
             final int finali = i;
             cv.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -516,7 +535,7 @@ public static Intent getOpenFacebookIntent(Context context) {
 
         } else if (id == R.id.nav_gallery) {
             Log.d(TAG, "onClick: navigating to " + mContext.getString(R.string.edit_profile_fragment));
-            Intent intent = new Intent(this, VolunteerActivity.class);
+            Intent intent = new Intent(this, GalleryActivity.class);
             startActivity(intent);
 
 

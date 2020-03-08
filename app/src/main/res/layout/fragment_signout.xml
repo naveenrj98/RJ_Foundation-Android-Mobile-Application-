@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:fab="http://schemas.android.com/apk/res-auto"
-    android:background="@drawable/signe_out">
+    android:background="@drawable/logout_back">
 
     <RelativeLayout
         android:id="@+id/relativeLayout"

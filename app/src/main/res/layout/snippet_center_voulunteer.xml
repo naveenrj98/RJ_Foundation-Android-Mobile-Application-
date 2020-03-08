@@ -19,48 +19,89 @@
 
                 android:id="@+id/gridl1"
                 android:layout_width="match_parent"
-                android:layout_height="200dp"
+                android:layout_height="137dp"
                 android:columnCount="1"
                 android:rowCount="1">
 
                 <android.support.v7.widget.CardView
-                    android:id="@+id/cv1"
-                    android:layout_width="0dp"
-                    android:layout_height="140dp"
-                    android:layout_columnWeight="1"
-                    android:layout_margin="16dp"
-                    android:layout_rowWeight="1"
-                    android:foreground="@drawable/ripple_effect"
-                    app:cardCornerRadius="80dp"
-                    app:cardElevation="20dp">
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    app:cardElevation="5dp"
+                    app:cardUseCompatPadding="true">
 
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@drawable/donate_now2" />
 
                     <LinearLayout
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal|center_vertical"
-                        android:layout_margin="10dp"
                         android:orientation="vertical">
 
-
                         <TextView
+                            android:id="@+id/donate"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:background="@drawable/donate_now"
-                            android:textAlignment="center"
-                            android:textColor="@android:color/black"
-                            android:textSize="30dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="8dp"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="EDUCATE THE GIRL AND EMPOWER THE NATION"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="16dp"
                             android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:id="@+id/layout_price"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+
+                        </LinearLayout>
+
 
                     </LinearLayout>
 
 
                 </android.support.v7.widget.CardView>
+
+                <!--<android.support.v7.widget.CardView-->
+                <!--android:id="@+id/cv1"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="140dp"-->
+                <!--android:layout_columnWeight="1"-->
+                <!--android:layout_margin="16dp"-->
+                <!--android:layout_rowWeight="1"-->
+                <!--android:foreground="@drawable/ripple_effect"-->
+                <!--app:cardCornerRadius="80dp"-->
+                <!--app:cardElevation="20dp">-->
+
+
+                <!--<ImageView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:background="@drawable/donate_now2" />-->
+
+                <!--<LinearLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center_horizontal|center_vertical"-->
+                <!--android:layout_margin="10dp"-->
+                <!--android:orientation="vertical">-->
+
+
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:background="@drawable/donate_now"-->
+                <!--android:textAlignment="center"-->
+                <!--android:textColor="@android:color/black"-->
+                <!--android:textSize="30dp"-->
+                <!--android:textStyle="bold" />-->
+
+                <!--</LinearLayout>-->
+
+
+                <!--</android.support.v7.widget.CardView>-->
 
 
             </GridLayout>
@@ -74,7 +115,7 @@
                     >
 
                     <android.support.v7.widget.CardView
-                        android:id="@+id/cv2"
+                        android:id="@+id/vcv1"
                             android:layout_width="0dp"
                             android:layout_height="100dp"
                             android:layout_rowWeight="1"
@@ -91,7 +132,7 @@
                                 <ImageView
                                     android:layout_width="fill_parent"
                                     android:layout_height="fill_parent"
-                                    android:background="@drawable/study_material"
+                                    android:background="@drawable/rjf"
                                    />
 
                                 <LinearLayout
@@ -106,7 +147,7 @@
                                     <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:background="@drawable/dospo"
+                                            android:background="@drawable/vteach"
 
                                             android:textAlignment="center"
                                             android:textColor="@android:color/black"
@@ -119,7 +160,7 @@
 
                         </android.support.v7.widget.CardView>
                     <android.support.v7.widget.CardView
-                        android:id="@+id/cv3"
+                        android:id="@+id/vcv2"
                             android:layout_width="0dp"
                             android:layout_height="120dp"
                             android:layout_rowWeight="1"
@@ -151,7 +192,7 @@
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:background="@drawable/sacet"
+                                            android:background="@drawable/vtraining"
 
                                             android:textAlignment="center"
                                             android:textColor="@android:color/black"
@@ -164,7 +205,7 @@
 
                         </android.support.v7.widget.CardView>
                     <android.support.v7.widget.CardView
-                        android:id="@+id/cv4"
+                        android:id="@+id/vcv3"
                         android:layout_width="0dp"
                         android:layout_height="120dp"
                         android:layout_rowWeight="1"
@@ -195,7 +236,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:background="@drawable/dost"
+                                android:background="@drawable/vfundraising"
 
                                 android:textAlignment="center"
                                 android:textColor="@android:color/black"
@@ -207,7 +248,7 @@
 
                     </android.support.v7.widget.CardView>
                     <android.support.v7.widget.CardView
-                        android:id="@+id/cv5"
+                        android:id="@+id/vcv4"
                         android:layout_width="0dp"
                         android:layout_height="120dp"
                         android:layout_rowWeight="1"
@@ -239,7 +280,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:background="@drawable/dsmt"
+                                android:background="@drawable/vawareness"
 
                                 android:textAlignment="center"
                                 android:textColor="@android:color/black"

@@ -10,9 +10,12 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.GridLayout;
 import android.widget.TextView;
 
+import in.juspay.godel.core.Card;
 import u.in.ac.bmsce.rjfoundation.DonorActivity;
 import u.in.ac.bmsce.rjfoundation.HomeActivity;
 import u.in.ac.bmsce.rjfoundation.News.NewsActivity;
@@ -23,6 +26,7 @@ public class EduactionFragment extends Fragment {
 
     private TextView tv_donate;
     GridLayout mg1, mg2;
+    CardView cv1,cv2,cv3,cv4,cv5;
 
     @Nullable
     @Override
@@ -31,6 +35,29 @@ public class EduactionFragment extends Fragment {
 
         mg1 = view.findViewById(R.id.gridl1);
         mg2 = view.findViewById(R.id.gridl2);
+
+//        Animation animation = AnimationUtils.loadAnimation(getActivity(), R.anim.item_animation_fall_down);
+//        mg1.startAnimation(animation);
+//        Animation b = AnimationUtils.loadAnimation(getActivity(), R.anim.swing_up_right);
+//        mg2.startAnimation(b);
+        cv1 = view.findViewById(R.id.cv1);
+        cv2 = view.findViewById(R.id.cv2);
+        cv3 = view.findViewById(R.id.cv3);
+        cv4 = view.findViewById(R.id.cv4);
+        cv5 = view.findViewById(R.id.cv5);
+
+        Animation animation = AnimationUtils.loadAnimation(getActivity(), R.anim.item_animation_fall_down);
+        cv1.startAnimation(animation);
+        Animation b = AnimationUtils.loadAnimation(getActivity(), R.anim.tem_animation_fall_down);
+        cv2.startAnimation(b);
+        Animation c = AnimationUtils.loadAnimation(getActivity(), R.anim.swing_up_right);
+        cv3.startAnimation(c);
+        Animation d = AnimationUtils.loadAnimation(getActivity(), R.anim.swing_up_left);
+        cv4.startAnimation(d);
+        Animation e = AnimationUtils.loadAnimation(getActivity(), R.anim.tem_animation_from_bottom);
+        cv5.startAnimation(e);
+
+
 
         clickdonateNow(mg1);
         clickSecondGrid(mg2);
@@ -58,7 +85,10 @@ public class EduactionFragment extends Fragment {
                 @Override
                 public void onClick(View v) {
 
+
                     if (finali == 0) {
+
+
                        // Log.d(getActivity(), "onClick: navigating to " + mContext.getString(R.string.edit_profile_fragment));
                         Intent intent = new Intent(getActivity(), DonateStudyMaterial.class);
                         startActivity(intent);

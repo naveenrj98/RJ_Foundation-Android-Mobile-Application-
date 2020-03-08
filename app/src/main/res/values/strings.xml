@@ -97,6 +97,10 @@
     <string name="filters">FILTERS</string>
     <string name="edit">EDIT</string>
 
+
+    <!-- res/values/strings.xml -->
+    <integer name="swing_anim_time">3000</integer>
+
     <string name="lbl_brightness">BRIGHTNESS</string>
     <string name="lbl_contrast">CONTRAST</string>
     <string name="lbl_saturation">SATURATION</string>

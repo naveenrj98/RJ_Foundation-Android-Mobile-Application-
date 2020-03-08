@@ -146,8 +146,8 @@ public class VolunteerActivity extends AppCompatActivity implements NavigationVi
     private void setupViewPager(){
         SectionsPagerAdapter adapter = new SectionsPagerAdapter(getSupportFragmentManager());
         adapter.addFragment(new VolunteerTeamFragment()); //index 0
-        adapter.addFragment(new VounteerFriendsFragment()); //index 1
-        adapter.addFragment(new VolunteerGalleryFragment()); //index 2
+       // adapter.addFragment(new VounteerFriendsFragment()); //index 1
+       // adapter.addFragment(new VolunteerGalleryFragment()); //index 2
         ViewPager viewPager = (ViewPager) findViewById(R.id.container);
         viewPager.setAdapter(adapter);
 
@@ -155,8 +155,8 @@ public class VolunteerActivity extends AppCompatActivity implements NavigationVi
         tabLayout.setupWithViewPager(viewPager);
 
         tabLayout.getTabAt(0).setText("Team");
-        tabLayout.getTabAt(1).setText("Friends");
-        tabLayout.getTabAt(2).setText("Gallery");
+       // tabLayout.getTabAt(1).setText("Gallery");
+     //  tabLayout.getTabAt(2).setText("Gallery");
     }
 
     ///-------------------------------------------Floating Action button methods for intent------------
